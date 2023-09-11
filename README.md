@@ -1,1 +1,1 @@
-# hero-with-two-cta-design-template
+# hero-template
