@@ -1,0 +1,3354 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<base href="/hero-design-template/">
+<meta content="fastn" name="generator">
+
+<link rel="shortcut icon" href="/-/__user_name__.github.io/__repo_name__/favicon.ico" type="image/x-icon">
+
+<script>
+let __fastn_package_name__ = "__user_name__.github.io/__repo_name__";
+
+</script>
+
+
+<script src="markdown-37D647982059462973339C58D1F7A18E3FDACCF47927ECB9B9B5E23A98008187.js"></script>
+<script src="prism-8FE3A42AD547E2DBBC9FE16BA059F8F1870D613AD0C5B0B013D6205B72A62BAF.js"></script>
+<script src="default-AA392D6D0E0EBB83A9975F00C0B249131EA39935D6C3C423BC4B167E458B6E3E.js"></script>
+<link rel="stylesheet" href="prism-73F718B9234C00C5C14AB6A11BF239A103F0B0F93B69CD55CB5C6530501182EB.css">
+
+
+
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+!* HTML5 display-role reset for older browsers *!
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}*/
+
+*, :after, :before {
+/*box-sizing: inherit;*/
+box-sizing: border-box;
+text-decoration: none;
+box-sizing: border-box;
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+border-right-width: 0px;
+border-style: solid;
+height: auto;
+width: auto;
+}
+
+*, pre, div {
+padding: 0;
+margin: 0;
+gap: 0;
+outline: none;
+}
+
+
+body, ol ol, ol ul, ul ol, ul ul {
+margin:0
+}
+pre, table{
+overflow:auto
+}
+html {
+height: 100%;
+width: 100%;
+}
+
+body {
+height: 100%;
+width: 100%;
+}
+
+input, code {
+vertical-align: middle;
+}
+pre {
+white-space: break-spaces;
+word-wrap: break-word;
+}
+html {
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizelegibility;
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+}
+iframe {
+border: 0;
+color-scheme: auto;
+}
+
+pre code {
+/*
+This break show-line-number in `ftd.code`
+overflow-x: auto;
+*/
+display: block;
+padding: 0 1em !important;
+}
+
+/* Common styles  */
+.ft_common{
+text-decoration: none;
+box-sizing: border-box;
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+border-right-width: 0px;
+border-style: solid;
+height: auto;
+width: auto;
+}
+
+/* Common container attributes */
+.ft_row, .ft_column {
+display: flex;
+align-items: start;
+justify-content: start
+}
+
+.full {
+width: 100%;
+height: 100%;
+}
+
+.ft_row {
+display: flex;
+align-items: start;
+justify-content: start;
+flex-direction: row;
+box-sizing: border-box;
+}
+.ft_column {
+display: flex;
+align-items: start;
+justify-content: start;
+flex-direction: column;
+box-sizing: border-box;
+}
+
+.ft_row {
+flex-direction: row;
+}
+
+.ft_column {
+flex-direction: column;
+}
+
+.ft_md ul,
+.ft_md ol{
+margin: 10px 0;
+}
+
+.ft_md ul ul,
+.ft_md ul ol,
+.ft_md ol ul,
+.ft_md ol ol {
+margin: 0;
+}
+
+.ft_md ul li,
+.ft_md ol li,
+.ft_md ul ol li .ft_md ul ul li .ft_md ol ul li .ft_md ol ol li {
+position: relative;
+padding-left: 32px;
+margin: 4px 0;
+}
+
+.ft_md ul {
+list-style: none;
+padding-left: 0;
+}
+
+.ft_md ol {
+list-style: none;
+padding-left: 0;
+counter-reset: item;
+}
+
+.ft_md ol li:before,
+.ft_md ol ol li:before,
+.ft_md ul ol li:before {
+content: counter(item);
+counter-increment: item;
+font-size: 11px;
+line-height: 10px;
+text-align: center;
+padding: 4px 0;
+height: 10px;
+width: 18px;
+border-radius: 10px;
+position: absolute;
+left: 0;
+top: 5px;
+}
+
+.ft_md ul li::before,
+.ft_md ul ul li::before,
+.ft_md ol ul li::before {
+content: "";
+position: absolute;
+width: 6px;
+height: 6px;
+left: 8px;
+top: 10px;
+border-radius: 50%;
+background: #c1c8ce;
+}
+
+ul {
+/* Added padding to the left to move the bullet marker to the right */
+padding-left: 20px;
+}
+
+a {
+color: #2952a3;
+}
+
+a:visited {
+color: #856ab9;
+}
+
+a:hover {
+color: #24478f;
+}
+
+.ft_md a {
+text-decoration: none;
+}
+
+.ft_md a:visited {
+text-decoration: none;
+}
+
+.ft_md a:hover {
+text-decoration: none;
+}
+
+code {
+padding: 0.1rem 0.25rem;
+border-radius: 4px;
+background-color: #0000000d;
+}
+
+.ft_md blockquote {
+padding: 0.25rem 1rem;
+margin: 1rem 0;
+border-radius: 3px;
+}
+
+.ft_md blockquote > blockquote {
+margin: 0;
+}
+
+
+body.dark code {
+padding: 0.1rem 0.25rem;
+border-radius: 4px;
+background-color: #ffffff1f;
+}
+
+
+body.dark a {
+color: #6498ff
+}
+
+body.dark a:visited {
+color: #b793fb;
+}
+
+
+p {
+margin-block-end: 1em;
+}
+
+h1:only-child {
+margin-block-end: 0.67em
+}
+
+table, td, th {
+border: 1px solid;
+}
+
+th {
+padding: 6px;
+}
+
+td {
+padding-left: 6px;
+}
+
+</style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column full"><div data-id="4" class="ft_column __w-3 __h-4 __pl-5 __pr-6 __pt-7 __pb-8 __bgc-9 __g-10"><comment data-id="5"></comment><div data-id="6" class="ft_row __w-11 __c-12 __g-13"><div data-id="7" class="ft_column __w-14"><div data-id="8" class="__c-15 __rl-16">__repo_name__</div><comment data-id="9"></comment><div data-id="10" class="ft_row __w-17 __mt-18 __g-19"><img data-id="11" src="-/fastn-community.github.io/category-doc-components/images/icon-github.svg" class="__w-20"></img><comment data-id="12"></comment></div><div data-id="13" class="ft_row __w-21 __mt-22 __g-23"><comment data-id="14"></comment><a data-id="15" href="https://fastn.com/featured/" class="ft_row __pl-24 __pr-25 __pt-26 __pb-27 __bw-28 __br-29 __bc-30 __c-31 __bgc-32 __rl-33 __jc-34 __ali-35 __g-36"><div data-id="16">View more hero designs</div><img data-id="17" src="-/fastn-community.github.io/category-doc-components/images/arrow.svg" class="__w-37"></img></a><comment data-id="18"></comment><a data-id="19" href="preview/" class="ft_row __pl-38 __pr-39 __pt-40 __pb-41 __bw-42 __br-43 __bc-44 __c-45 __bgc-46 __rl-47 __jc-48 __ali-49 __g-50"><div data-id="20">Preview</div><img data-id="21" src="-/fastn-community.github.io/category-doc-components/images/arrow.svg" class="__w-51"></img></a></div></div><comment data-id="22"></comment><img data-id="23" src="-/fastn-community.github.io/category-doc-components/images/stamp.svg" class="__as-52 __w-53"></img></div><div data-id="24" class="ft_column __w-54 __p-55 __br-56 __c-57 __bgc-58"><comment data-id="25"></comment><div data-id="26" class="__mb-59 __rl-60">Hero Stack</div><comment data-id="27"></comment><comment data-id="28"></comment><div data-id="29" class="ft_column __w-61 __g-62"><div data-id="30" class="ft_column __w-63 __br-64"><div data-id="31" class="__w-65 __h-66 __pt-67 __pb-68 __c-69 __bgc-70 __rl-71 __ta-72">Implement the **HERO STACK** component here</div></div><div data-id="32" class="ft_column __w-73 __pt-74 __pb-75 __oy-76 __cur-77"><comment data-id="33"></comment><div data-id="34" class="ft_row __w-78 __btlr-83 __btrr-84 __bgc-85"><comment data-id="35"></comment><comment data-id="36"></comment><div data-id="37" class="ft_row __as-87 __pos-88 __t-89 __r-90 __jc-91 __ali-92 __g-93"><comment data-id="38"></comment><comment data-id="39"></comment><comment data-id="40"></comment></div><comment data-id="41"></comment></div><comment data-id="42"></comment><comment data-id="43"></comment><pre data-id="44" class="language-ftd fastn-theme-light __w-94 __pb-95 __btlr-96 __btrr-97 __bblr-98 __bbrr-99 __ox-100 __oy-101 __c-102 __bgc-103 __rl-104 __mxh-105"><code data-id="45" class="language-ftd fastn-theme-light">;; In FASTN.ftd
+-- fastn.dependency:__user_name__.github.io/__repo_name__
+
+;; In the file where you want to add the header (e.g., `index.ftd`)
+
+;; Add this at the top of the file
+-- import: __user_name__.github.io/__repo_name__ as hero
+
+;; Add this where you want to show the component
+-- hero.stack: Title copy goes here
+cta-primary-text: View more
+cta-primary-url: /
+cta-secondary-text: Preview
+cta-secondary-url: /
+image: $assets.files.image.svg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum. Proin viverra nulla sem, vel molestie lacus volutpat nec. Integer ut bibendum erat.
+</code></pre><comment data-id="46"></comment><div data-id="47" class="ft_column __pos-107 __p-108 __bbrr-109 __b-110 __r-111 __z-112"><div data-id="48" class="ft_row __g-113"><comment data-id="49"></comment><div data-id="50" class="ft_row __g-114"><div data-id="51" class="__c-115 __rl-116">Lang:</div><div data-id="52" class="__c-117 __rl-118">ftd</div></div></div></div></div></div></div><div data-id="53" class="ft_column __w-119 __p-120 __br-121 __c-122 __bgc-123"><comment data-id="54"></comment><div data-id="55" class="__mb-124 __rl-125">Hero Heading Center</div><comment data-id="56"></comment><comment data-id="57"></comment><div data-id="58" class="ft_column __w-126 __g-127"><div data-id="59" class="ft_column __w-128 __br-129"><div data-id="60" class="__w-130 __h-131 __pt-132 __pb-133 __c-134 __bgc-135 __rl-136 __ta-137">Implement the **heading center** component here</div></div><div data-id="61" class="ft_column __w-138 __pt-139 __pb-140 __oy-141 __cur-142"><comment data-id="62"></comment><div data-id="63" class="ft_row __w-143 __btlr-148 __btrr-149 __bgc-150"><comment data-id="64"></comment><comment data-id="65"></comment><div data-id="66" class="ft_row __as-152 __pos-153 __t-154 __r-155 __jc-156 __ali-157 __g-158"><comment data-id="67"></comment><comment data-id="68"></comment><comment data-id="69"></comment></div><comment data-id="70"></comment></div><comment data-id="71"></comment><comment data-id="72"></comment><pre data-id="73" class="language-ftd fastn-theme-light __w-159 __pb-160 __btlr-161 __btrr-162 __bblr-163 __bbrr-164 __ox-165 __oy-166 __c-167 __bgc-168 __rl-169 __mxh-170"><code data-id="74" class="language-ftd fastn-theme-light">;; In FASTN.ftd
+-- fastn.dependency:__user_name__.github.io/__repo_name__
+
+;; In the file where you want to add the header (e.g., `index.ftd`)
+
+;; Add this at the top of the file
+-- import: __user_name__.github.io/__repo_name__ as hero
+
+;; Add this where you want to show the component
+-- hero.heading-center: Title copy goes here
+cta-primary-text: View more
+cta-primary-url: /
+cta-secondary-text: Preview
+cta-secondary-url: /
+image: $assets.files.image.svg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum. Proin viverra nulla sem, vel molestie lacus volutpat nec. Integer ut bibendum erat.
+</code></pre><comment data-id="75"></comment><div data-id="76" class="ft_column __pos-172 __p-173 __bbrr-174 __b-175 __r-176 __z-177"><div data-id="77" class="ft_row __g-178"><comment data-id="78"></comment><div data-id="79" class="ft_row __g-179"><div data-id="80" class="__c-180 __rl-181">Lang:</div><div data-id="81" class="__c-182 __rl-183">ftd</div></div></div></div></div></div></div><div data-id="82" class="ft_column __w-184 __p-185 __br-186 __c-187 __bgc-188"><comment data-id="83"></comment><div data-id="84" class="__mb-189 __rl-190">Hero Heading Left</div><comment data-id="85"></comment><comment data-id="86"></comment><div data-id="87" class="ft_column __w-191 __g-192"><div data-id="88" class="ft_column __w-193 __br-194"><div data-id="89" class="__w-195 __h-196 __pt-197 __pb-198 __c-199 __bgc-200 __rl-201 __ta-202">Implement the **heading left** component here</div></div><div data-id="90" class="ft_column __w-203 __pt-204 __pb-205 __oy-206 __cur-207"><comment data-id="91"></comment><div data-id="92" class="ft_row __w-208 __btlr-213 __btrr-214 __bgc-215"><comment data-id="93"></comment><comment data-id="94"></comment><div data-id="95" class="ft_row __as-217 __pos-218 __t-219 __r-220 __jc-221 __ali-222 __g-223"><comment data-id="96"></comment><comment data-id="97"></comment><comment data-id="98"></comment></div><comment data-id="99"></comment></div><comment data-id="100"></comment><comment data-id="101"></comment><pre data-id="102" class="language-ftd fastn-theme-light __w-224 __pb-225 __btlr-226 __btrr-227 __bblr-228 __bbrr-229 __ox-230 __oy-231 __c-232 __bgc-233 __rl-234 __mxh-235"><code data-id="103" class="language-ftd fastn-theme-light">;; In FASTN.ftd
+-- fastn.dependency:__user_name__.github.io/__repo_name__
+
+;; In the file where you want to add the header (e.g., `index.ftd`)
+
+;; Add this at the top of the file
+-- import: __user_name__.github.io/__repo_name__ as hero
+
+;; Add this where you want to show the component
+-- hero.heading-left: Title copy goes here
+cta-primary-text: View more
+cta-primary-url: /
+cta-secondary-text: Preview
+cta-secondary-url: /
+image: $assets.files.image.svg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum. Proin viverra nulla sem, vel molestie lacus volutpat nec. Integer ut bibendum erat.
+</code></pre><comment data-id="104"></comment><div data-id="105" class="ft_column __pos-237 __p-238 __bbrr-239 __b-240 __r-241 __z-242"><div data-id="106" class="ft_row __g-243"><comment data-id="107"></comment><div data-id="108" class="ft_row __g-244"><div data-id="109" class="__c-245 __rl-246">Lang:</div><div data-id="110" class="__c-247 __rl-248">ftd</div></div></div></div></div></div></div><div data-id="111" class="ft_column __w-249 __p-250 __br-251 __c-252 __bgc-253"><comment data-id="112"></comment><div data-id="113" class="__mb-254 __rl-255">Hero Heading Right</div><comment data-id="114"></comment><comment data-id="115"></comment><div data-id="116" class="ft_column __w-256 __g-257"><div data-id="117" class="ft_column __w-258 __br-259"><div data-id="118" class="__w-260 __h-261 __pt-262 __pb-263 __c-264 __bgc-265 __rl-266 __ta-267">Implement the **heading right** component here</div></div><div data-id="119" class="ft_column __w-268 __pt-269 __pb-270 __oy-271 __cur-272"><comment data-id="120"></comment><div data-id="121" class="ft_row __w-273 __btlr-278 __btrr-279 __bgc-280"><comment data-id="122"></comment><comment data-id="123"></comment><div data-id="124" class="ft_row __as-282 __pos-283 __t-284 __r-285 __jc-286 __ali-287 __g-288"><comment data-id="125"></comment><comment data-id="126"></comment><comment data-id="127"></comment></div><comment data-id="128"></comment></div><comment data-id="129"></comment><comment data-id="130"></comment><pre data-id="131" class="language-ftd fastn-theme-light __w-289 __pb-290 __btlr-291 __btrr-292 __bblr-293 __bbrr-294 __ox-295 __oy-296 __c-297 __bgc-298 __rl-299 __mxh-300"><code data-id="132" class="language-ftd fastn-theme-light">;; In FASTN.ftd
+-- fastn.dependency:__user_name__.github.io/__repo_name__
+
+;; In the file where you want to add the header (e.g., `index.ftd`)
+
+;; Add this at the top of the file
+-- import: __user_name__.github.io/__repo_name__ as hero
+
+;; Add this where you want to show the component
+-- hero.heading-right: Title copy goes here
+cta-primary-text: View more
+cta-primary-url: /
+cta-secondary-text: Preview
+cta-secondary-url: /
+image: $assets.files.image.svg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum. Proin viverra nulla sem, vel molestie lacus volutpat nec. Integer ut bibendum erat.
+</code></pre><comment data-id="133"></comment><div data-id="134" class="ft_column __pos-302 __p-303 __bbrr-304 __b-305 __r-306 __z-307"><div data-id="135" class="ft_row __g-308"><comment data-id="136"></comment><div data-id="137" class="ft_row __g-309"><div data-id="138" class="__c-310 __rl-311">Lang:</div><div data-id="139" class="__c-312 __rl-313">ftd</div></div></div></div></div></div></div><div data-id="140" class="ft_column __w-314 __p-315 __br-316 __c-317 __bgc-318"><comment data-id="141"></comment><div data-id="142" class="__mb-319 __rl-320">Hero Without Image</div><comment data-id="143"></comment><comment data-id="144"></comment><div data-id="145" class="ft_column __w-321 __g-322"><div data-id="146" class="ft_column __w-323 __br-324"><div data-id="147" class="__w-325 __h-326 __pt-327 __pb-328 __c-329 __bgc-330 __rl-331 __ta-332">Implement the **without image** component here</div></div><div data-id="148" class="ft_column __w-333 __pt-334 __pb-335 __oy-336 __cur-337"><comment data-id="149"></comment><div data-id="150" class="ft_row __w-338 __btlr-343 __btrr-344 __bgc-345"><comment data-id="151"></comment><comment data-id="152"></comment><div data-id="153" class="ft_row __as-347 __pos-348 __t-349 __r-350 __jc-351 __ali-352 __g-353"><comment data-id="154"></comment><comment data-id="155"></comment><comment data-id="156"></comment></div><comment data-id="157"></comment></div><comment data-id="158"></comment><comment data-id="159"></comment><pre data-id="160" class="language-ftd fastn-theme-light __w-354 __pb-355 __btlr-356 __btrr-357 __bblr-358 __bbrr-359 __ox-360 __oy-361 __c-362 __bgc-363 __rl-364 __mxh-365"><code data-id="161" class="language-ftd fastn-theme-light">;; In FASTN.ftd
+-- fastn.dependency:__user_name__.github.io/__repo_name__
+
+;; In the file where you want to add the header (e.g., `index.ftd`)
+
+;; Add this at the top of the file
+-- import: __user_name__.github.io/__repo_name__ as hero
+
+;; Add this where you want to show the component
+-- hero.without-image: Title copy goes here
+cta-primary-text: View more
+cta-primary-url: /
+cta-secondary-text: Preview
+cta-secondary-url: /
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum. Proin viverra nulla sem, vel molestie lacus volutpat nec. Integer ut bibendum erat.
+</code></pre><comment data-id="162"></comment><div data-id="163" class="ft_column __pos-367 __p-368 __bbrr-369 __b-370 __r-371 __z-372"><div data-id="164" class="ft_row __g-373"><comment data-id="165"></comment><div data-id="166" class="ft_row __g-374"><div data-id="167" class="__c-375 __rl-376">Lang:</div><div data-id="168" class="__c-377 __rl-378">ftd</div></div></div></div></div></div></div><div data-id="169" class="ft_row __pos-379 __p-380 __bw-381 __br-382 __bc-383 __b-384 __r-385 __z-386 __bgc-387"><comment data-id="170"></comment><div data-id="171" class="ft_row __cur-388"><img data-id="172" src="-/fastn-community.github.io/dark-mode-switcher/static/system-mode-active.png" class="__as-389 __w-390 __h-391"></img></div><comment data-id="173"></comment><comment data-id="174"></comment></div></div></div></div></body><style id="styles">
+.__w-1 { width: 100%; }
+.__h-2 { height: 100%; }
+.__w-3 { width: 100%; }
+.__h-4 { height: 100%; }
+.__pl-5 { padding-left: 65px; }
+.__pr-6 { padding-right: 65px; }
+.__pt-7 { padding-top: 50px; }
+.__pb-8 { padding-bottom: 50px; }
+.__bgc-9 { background-color: #FFFFFF; }
+body.dark .__bgc-9 { background-color: #000000; }
+.__g-10 { gap: 80px; }
+.__w-11 { width: 100%; }
+.__c-12 { color: #707070 !important; }
+body.dark .__c-12 { color: #D9D9D9 !important; }
+.__c-12:visited { color: #707070 !important; }
+body.dark  .__c-12:visited { color: #D9D9D9 !important; }
+.__g-13 { gap: 50px; }
+.__w-14 { width: 46%; }
+.__c-15 { color: #333333 !important; }
+body.dark .__c-15 { color: #FFFFFF !important; }
+.__c-15:visited { color: #333333 !important; }
+body.dark  .__c-15:visited { color: #FFFFFF !important; }
+.__rl-16 {  font-family: sans-serif; font-size: 50px; font-weight: 400; line-height: 65px; }
+body.mobile .__rl-16 {  font-family: sans-serif; font-size: 36px; font-weight: 400; line-height: 54px; }
+.__w-17 { width: 100%; }
+.__mt-18 { margin-top: 20px; }
+.__g-19 { gap: 16px; }
+.__w-20 { width: 24px; }
+.__w-21 { width: 100%; }
+.__mt-22 { margin-top: 20px; }
+.__g-23 { gap: 16px; }
+.__pl-24 { padding-left: 1rem; }
+.__pr-25 { padding-right: 1rem; }
+.__pt-26 { padding-top: 0.75rem; }
+.__pb-27 { padding-bottom: 0.75rem; }
+.__bw-28 { border-width: 1px; }
+.__br-29 { border-radius: 5px; }
+.__bc-30 { border-color: #F3A063; }
+.__c-31 { color: #512403 !important; }
+body.dark .__c-31 { color: #FFFFFF !important; }
+.__c-31:visited { color: #512403 !important; }
+body.dark  .__c-31:visited { color: #FFFFFF !important; }
+.__bgc-32 { background-color: #EF8435; }
+.__rl-33 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+body.mobile .__rl-33 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+.__jc-34 { justify-content: center; }
+.__ali-35 { align-items: center; }
+.__g-36 { gap: 13px; }
+.__w-37 { width: 22px; }
+.__pl-38 { padding-left: 1rem; }
+.__pr-39 { padding-right: 1rem; }
+.__pt-40 { padding-top: 0.75rem; }
+.__pb-41 { padding-bottom: 0.75rem; }
+.__bw-42 { border-width: 1px; }
+.__br-43 { border-radius: 5px; }
+.__bc-44 { border-color: #B0AEAC; }
+.__c-45 { color: rgb(51, 51, 51) !important; }
+body.dark .__c-45 { color: #333333 !important; }
+.__c-45:visited { color: rgb(51, 51, 51) !important; }
+body.dark  .__c-45:visited { color: #333333 !important; }
+.__bgc-46 { background-color: #EBE8E5; }
+body.dark .__bgc-46 { background-color: #d3cec8; }
+.__rl-47 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+body.mobile .__rl-47 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+.__jc-48 { justify-content: center; }
+.__ali-49 { align-items: center; }
+.__g-50 { gap: 13px; }
+.__w-51 { width: 22px; }
+.__as-52 { align-self: center; }
+.__w-53 { width: 340px; }
+.__w-54 { width: 100%; }
+.__p-55 { padding: 40px; }
+.__br-56 { border-radius: 20px; }
+.__c-57 { color: #333333 !important; }
+body.dark .__c-57 { color: #FFFFFF !important; }
+.__c-57:visited { color: #333333 !important; }
+body.dark  .__c-57:visited { color: #FFFFFF !important; }
+.__bgc-58 { background-color: #fbf3dc; }
+body.dark .__bgc-58 { background-color: #2b2b2b; }
+.__mb-59 { margin-bottom: 8px; }
+.__rl-60 {  font-family: sans-serif; font-size: 24px; font-weight: 400; line-height: 31px; }
+body.mobile .__rl-60 {  font-family: sans-serif; font-size: 22px; font-weight: 400; line-height: 29px; }
+.__w-61 { width: 100%; }
+.__g-62 { gap: 28px; }
+.__w-63 { width: 100%; }
+.__br-64 { border-radius: 5px; }
+.__w-65 { width: 100%; }
+.__h-66 { height: 100%; }
+.__pt-67 { padding-top: 32px; }
+.__pb-68 { padding-bottom: 32px; }
+.__c-69 { color: #707070 !important; }
+body.dark .__c-69 { color: #D9D9D9 !important; }
+.__c-69:visited { color: #707070 !important; }
+body.dark  .__c-69:visited { color: #D9D9D9 !important; }
+.__bgc-70 { background-color: #FFFFFF; }
+body.dark .__bgc-70 { background-color: #000000; }
+.__rl-71 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 30px; }
+body.mobile .__rl-71 {  font-family: sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+.__ta-72 { text-align: center; }
+.__w-73 { width: 100%; }
+.__pt-74 { padding-top: 12px; }
+.__pb-75 { padding-bottom: 12px; }
+.__oy-76 { overflow-y: auto; }
+.__cur-77 { cursor: default; }
+.__w-78 { width: 100%; }
+.__btlr-83 { border-top-left-radius: 4px; }
+.__btrr-84 { border-top-right-radius: 4px; }
+.__bgc-85 { background-color: #FDFAF1; }
+body.dark .__bgc-85 { background-color: #232323; }
+.__as-87 { align-self: end; }
+.__pos-88 { position: absolute; }
+.__t-89 { top: 12px; }
+.__r-90 { right: 20px; }
+.__jc-91 { justify-content: right; }
+.__ali-92 { align-items: center; }
+.__g-93 { gap: 10px; }
+.__w-94 { width: 100%; }
+.__pb-95 { padding-bottom: 24px; }
+.__btlr-96 { border-top-left-radius: 4px; }
+.__btrr-97 { border-top-right-radius: 4px; }
+.__bblr-98 { border-bottom-left-radius: 4px; }
+.__bbrr-99 { border-bottom-right-radius: 4px; }
+.__ox-100 { overflow-x: auto; }
+.__oy-101 { overflow-y: auto; }
+.__c-102 { color: #707070 !important; }
+body.dark .__c-102 { color: #D9D9D9 !important; }
+.__c-102:visited { color: #707070 !important; }
+body.dark  .__c-102:visited { color: #D9D9D9 !important; }
+.__bgc-103 { background-color: #f5f5f5; }
+body.dark .__bgc-103 { background-color: #21222c; }
+.__rl-104 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 30px; }
+body.mobile .__rl-104 {  font-family: sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+.__mxh-105 { max-height: 300px; }
+.__pos-107 { position: absolute; }
+.__p-108 { padding: 6px; }
+.__bbrr-109 { border-bottom-right-radius: 4px; }
+.__b-110 { bottom: 12px; }
+.__r-111 { right: 12px; }
+.__z-112 { z-index: 999; }
+.__g-113 { gap: 16px; }
+.__g-114 { gap: 4px; }
+.__c-115 { color: #707070 !important; }
+body.dark .__c-115 { color: #D9D9D9 !important; }
+.__c-115:visited { color: #707070 !important; }
+body.dark  .__c-115:visited { color: #D9D9D9 !important; }
+.__rl-116 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+body.mobile .__rl-116 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+.__c-117 { color: #707070 !important; }
+body.dark .__c-117 { color: #D9D9D9 !important; }
+.__c-117:visited { color: #707070 !important; }
+body.dark  .__c-117:visited { color: #D9D9D9 !important; }
+.__rl-118 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+body.mobile .__rl-118 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+.__w-119 { width: 100%; }
+.__p-120 { padding: 40px; }
+.__br-121 { border-radius: 20px; }
+.__c-122 { color: #333333 !important; }
+body.dark .__c-122 { color: #FFFFFF !important; }
+.__c-122:visited { color: #333333 !important; }
+body.dark  .__c-122:visited { color: #FFFFFF !important; }
+.__bgc-123 { background-color: #fbf3dc; }
+body.dark .__bgc-123 { background-color: #2b2b2b; }
+.__mb-124 { margin-bottom: 8px; }
+.__rl-125 {  font-family: sans-serif; font-size: 24px; font-weight: 400; line-height: 31px; }
+body.mobile .__rl-125 {  font-family: sans-serif; font-size: 22px; font-weight: 400; line-height: 29px; }
+.__w-126 { width: 100%; }
+.__g-127 { gap: 28px; }
+.__w-128 { width: 100%; }
+.__br-129 { border-radius: 5px; }
+.__w-130 { width: 100%; }
+.__h-131 { height: 100%; }
+.__pt-132 { padding-top: 32px; }
+.__pb-133 { padding-bottom: 32px; }
+.__c-134 { color: #707070 !important; }
+body.dark .__c-134 { color: #D9D9D9 !important; }
+.__c-134:visited { color: #707070 !important; }
+body.dark  .__c-134:visited { color: #D9D9D9 !important; }
+.__bgc-135 { background-color: #FFFFFF; }
+body.dark .__bgc-135 { background-color: #000000; }
+.__rl-136 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 30px; }
+body.mobile .__rl-136 {  font-family: sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+.__ta-137 { text-align: center; }
+.__w-138 { width: 100%; }
+.__pt-139 { padding-top: 12px; }
+.__pb-140 { padding-bottom: 12px; }
+.__oy-141 { overflow-y: auto; }
+.__cur-142 { cursor: default; }
+.__w-143 { width: 100%; }
+.__btlr-148 { border-top-left-radius: 4px; }
+.__btrr-149 { border-top-right-radius: 4px; }
+.__bgc-150 { background-color: #FDFAF1; }
+body.dark .__bgc-150 { background-color: #232323; }
+.__as-152 { align-self: end; }
+.__pos-153 { position: absolute; }
+.__t-154 { top: 12px; }
+.__r-155 { right: 20px; }
+.__jc-156 { justify-content: right; }
+.__ali-157 { align-items: center; }
+.__g-158 { gap: 10px; }
+.__w-159 { width: 100%; }
+.__pb-160 { padding-bottom: 24px; }
+.__btlr-161 { border-top-left-radius: 4px; }
+.__btrr-162 { border-top-right-radius: 4px; }
+.__bblr-163 { border-bottom-left-radius: 4px; }
+.__bbrr-164 { border-bottom-right-radius: 4px; }
+.__ox-165 { overflow-x: auto; }
+.__oy-166 { overflow-y: auto; }
+.__c-167 { color: #707070 !important; }
+body.dark .__c-167 { color: #D9D9D9 !important; }
+.__c-167:visited { color: #707070 !important; }
+body.dark  .__c-167:visited { color: #D9D9D9 !important; }
+.__bgc-168 { background-color: #f5f5f5; }
+body.dark .__bgc-168 { background-color: #21222c; }
+.__rl-169 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 30px; }
+body.mobile .__rl-169 {  font-family: sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+.__mxh-170 { max-height: 300px; }
+.__pos-172 { position: absolute; }
+.__p-173 { padding: 6px; }
+.__bbrr-174 { border-bottom-right-radius: 4px; }
+.__b-175 { bottom: 12px; }
+.__r-176 { right: 12px; }
+.__z-177 { z-index: 999; }
+.__g-178 { gap: 16px; }
+.__g-179 { gap: 4px; }
+.__c-180 { color: #707070 !important; }
+body.dark .__c-180 { color: #D9D9D9 !important; }
+.__c-180:visited { color: #707070 !important; }
+body.dark  .__c-180:visited { color: #D9D9D9 !important; }
+.__rl-181 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+body.mobile .__rl-181 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+.__c-182 { color: #707070 !important; }
+body.dark .__c-182 { color: #D9D9D9 !important; }
+.__c-182:visited { color: #707070 !important; }
+body.dark  .__c-182:visited { color: #D9D9D9 !important; }
+.__rl-183 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+body.mobile .__rl-183 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+.__w-184 { width: 100%; }
+.__p-185 { padding: 40px; }
+.__br-186 { border-radius: 20px; }
+.__c-187 { color: #333333 !important; }
+body.dark .__c-187 { color: #FFFFFF !important; }
+.__c-187:visited { color: #333333 !important; }
+body.dark  .__c-187:visited { color: #FFFFFF !important; }
+.__bgc-188 { background-color: #fbf3dc; }
+body.dark .__bgc-188 { background-color: #2b2b2b; }
+.__mb-189 { margin-bottom: 8px; }
+.__rl-190 {  font-family: sans-serif; font-size: 24px; font-weight: 400; line-height: 31px; }
+body.mobile .__rl-190 {  font-family: sans-serif; font-size: 22px; font-weight: 400; line-height: 29px; }
+.__w-191 { width: 100%; }
+.__g-192 { gap: 28px; }
+.__w-193 { width: 100%; }
+.__br-194 { border-radius: 5px; }
+.__w-195 { width: 100%; }
+.__h-196 { height: 100%; }
+.__pt-197 { padding-top: 32px; }
+.__pb-198 { padding-bottom: 32px; }
+.__c-199 { color: #707070 !important; }
+body.dark .__c-199 { color: #D9D9D9 !important; }
+.__c-199:visited { color: #707070 !important; }
+body.dark  .__c-199:visited { color: #D9D9D9 !important; }
+.__bgc-200 { background-color: #FFFFFF; }
+body.dark .__bgc-200 { background-color: #000000; }
+.__rl-201 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 30px; }
+body.mobile .__rl-201 {  font-family: sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+.__ta-202 { text-align: center; }
+.__w-203 { width: 100%; }
+.__pt-204 { padding-top: 12px; }
+.__pb-205 { padding-bottom: 12px; }
+.__oy-206 { overflow-y: auto; }
+.__cur-207 { cursor: default; }
+.__w-208 { width: 100%; }
+.__btlr-213 { border-top-left-radius: 4px; }
+.__btrr-214 { border-top-right-radius: 4px; }
+.__bgc-215 { background-color: #FDFAF1; }
+body.dark .__bgc-215 { background-color: #232323; }
+.__as-217 { align-self: end; }
+.__pos-218 { position: absolute; }
+.__t-219 { top: 12px; }
+.__r-220 { right: 20px; }
+.__jc-221 { justify-content: right; }
+.__ali-222 { align-items: center; }
+.__g-223 { gap: 10px; }
+.__w-224 { width: 100%; }
+.__pb-225 { padding-bottom: 24px; }
+.__btlr-226 { border-top-left-radius: 4px; }
+.__btrr-227 { border-top-right-radius: 4px; }
+.__bblr-228 { border-bottom-left-radius: 4px; }
+.__bbrr-229 { border-bottom-right-radius: 4px; }
+.__ox-230 { overflow-x: auto; }
+.__oy-231 { overflow-y: auto; }
+.__c-232 { color: #707070 !important; }
+body.dark .__c-232 { color: #D9D9D9 !important; }
+.__c-232:visited { color: #707070 !important; }
+body.dark  .__c-232:visited { color: #D9D9D9 !important; }
+.__bgc-233 { background-color: #f5f5f5; }
+body.dark .__bgc-233 { background-color: #21222c; }
+.__rl-234 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 30px; }
+body.mobile .__rl-234 {  font-family: sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+.__mxh-235 { max-height: 300px; }
+.__pos-237 { position: absolute; }
+.__p-238 { padding: 6px; }
+.__bbrr-239 { border-bottom-right-radius: 4px; }
+.__b-240 { bottom: 12px; }
+.__r-241 { right: 12px; }
+.__z-242 { z-index: 999; }
+.__g-243 { gap: 16px; }
+.__g-244 { gap: 4px; }
+.__c-245 { color: #707070 !important; }
+body.dark .__c-245 { color: #D9D9D9 !important; }
+.__c-245:visited { color: #707070 !important; }
+body.dark  .__c-245:visited { color: #D9D9D9 !important; }
+.__rl-246 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+body.mobile .__rl-246 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+.__c-247 { color: #707070 !important; }
+body.dark .__c-247 { color: #D9D9D9 !important; }
+.__c-247:visited { color: #707070 !important; }
+body.dark  .__c-247:visited { color: #D9D9D9 !important; }
+.__rl-248 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+body.mobile .__rl-248 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+.__w-249 { width: 100%; }
+.__p-250 { padding: 40px; }
+.__br-251 { border-radius: 20px; }
+.__c-252 { color: #333333 !important; }
+body.dark .__c-252 { color: #FFFFFF !important; }
+.__c-252:visited { color: #333333 !important; }
+body.dark  .__c-252:visited { color: #FFFFFF !important; }
+.__bgc-253 { background-color: #fbf3dc; }
+body.dark .__bgc-253 { background-color: #2b2b2b; }
+.__mb-254 { margin-bottom: 8px; }
+.__rl-255 {  font-family: sans-serif; font-size: 24px; font-weight: 400; line-height: 31px; }
+body.mobile .__rl-255 {  font-family: sans-serif; font-size: 22px; font-weight: 400; line-height: 29px; }
+.__w-256 { width: 100%; }
+.__g-257 { gap: 28px; }
+.__w-258 { width: 100%; }
+.__br-259 { border-radius: 5px; }
+.__w-260 { width: 100%; }
+.__h-261 { height: 100%; }
+.__pt-262 { padding-top: 32px; }
+.__pb-263 { padding-bottom: 32px; }
+.__c-264 { color: #707070 !important; }
+body.dark .__c-264 { color: #D9D9D9 !important; }
+.__c-264:visited { color: #707070 !important; }
+body.dark  .__c-264:visited { color: #D9D9D9 !important; }
+.__bgc-265 { background-color: #FFFFFF; }
+body.dark .__bgc-265 { background-color: #000000; }
+.__rl-266 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 30px; }
+body.mobile .__rl-266 {  font-family: sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+.__ta-267 { text-align: center; }
+.__w-268 { width: 100%; }
+.__pt-269 { padding-top: 12px; }
+.__pb-270 { padding-bottom: 12px; }
+.__oy-271 { overflow-y: auto; }
+.__cur-272 { cursor: default; }
+.__w-273 { width: 100%; }
+.__btlr-278 { border-top-left-radius: 4px; }
+.__btrr-279 { border-top-right-radius: 4px; }
+.__bgc-280 { background-color: #FDFAF1; }
+body.dark .__bgc-280 { background-color: #232323; }
+.__as-282 { align-self: end; }
+.__pos-283 { position: absolute; }
+.__t-284 { top: 12px; }
+.__r-285 { right: 20px; }
+.__jc-286 { justify-content: right; }
+.__ali-287 { align-items: center; }
+.__g-288 { gap: 10px; }
+.__w-289 { width: 100%; }
+.__pb-290 { padding-bottom: 24px; }
+.__btlr-291 { border-top-left-radius: 4px; }
+.__btrr-292 { border-top-right-radius: 4px; }
+.__bblr-293 { border-bottom-left-radius: 4px; }
+.__bbrr-294 { border-bottom-right-radius: 4px; }
+.__ox-295 { overflow-x: auto; }
+.__oy-296 { overflow-y: auto; }
+.__c-297 { color: #707070 !important; }
+body.dark .__c-297 { color: #D9D9D9 !important; }
+.__c-297:visited { color: #707070 !important; }
+body.dark  .__c-297:visited { color: #D9D9D9 !important; }
+.__bgc-298 { background-color: #f5f5f5; }
+body.dark .__bgc-298 { background-color: #21222c; }
+.__rl-299 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 30px; }
+body.mobile .__rl-299 {  font-family: sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+.__mxh-300 { max-height: 300px; }
+.__pos-302 { position: absolute; }
+.__p-303 { padding: 6px; }
+.__bbrr-304 { border-bottom-right-radius: 4px; }
+.__b-305 { bottom: 12px; }
+.__r-306 { right: 12px; }
+.__z-307 { z-index: 999; }
+.__g-308 { gap: 16px; }
+.__g-309 { gap: 4px; }
+.__c-310 { color: #707070 !important; }
+body.dark .__c-310 { color: #D9D9D9 !important; }
+.__c-310:visited { color: #707070 !important; }
+body.dark  .__c-310:visited { color: #D9D9D9 !important; }
+.__rl-311 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+body.mobile .__rl-311 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+.__c-312 { color: #707070 !important; }
+body.dark .__c-312 { color: #D9D9D9 !important; }
+.__c-312:visited { color: #707070 !important; }
+body.dark  .__c-312:visited { color: #D9D9D9 !important; }
+.__rl-313 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+body.mobile .__rl-313 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+.__w-314 { width: 100%; }
+.__p-315 { padding: 40px; }
+.__br-316 { border-radius: 20px; }
+.__c-317 { color: #333333 !important; }
+body.dark .__c-317 { color: #FFFFFF !important; }
+.__c-317:visited { color: #333333 !important; }
+body.dark  .__c-317:visited { color: #FFFFFF !important; }
+.__bgc-318 { background-color: #fbf3dc; }
+body.dark .__bgc-318 { background-color: #2b2b2b; }
+.__mb-319 { margin-bottom: 8px; }
+.__rl-320 {  font-family: sans-serif; font-size: 24px; font-weight: 400; line-height: 31px; }
+body.mobile .__rl-320 {  font-family: sans-serif; font-size: 22px; font-weight: 400; line-height: 29px; }
+.__w-321 { width: 100%; }
+.__g-322 { gap: 28px; }
+.__w-323 { width: 100%; }
+.__br-324 { border-radius: 5px; }
+.__w-325 { width: 100%; }
+.__h-326 { height: 100%; }
+.__pt-327 { padding-top: 32px; }
+.__pb-328 { padding-bottom: 32px; }
+.__c-329 { color: #707070 !important; }
+body.dark .__c-329 { color: #D9D9D9 !important; }
+.__c-329:visited { color: #707070 !important; }
+body.dark  .__c-329:visited { color: #D9D9D9 !important; }
+.__bgc-330 { background-color: #FFFFFF; }
+body.dark .__bgc-330 { background-color: #000000; }
+.__rl-331 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 30px; }
+body.mobile .__rl-331 {  font-family: sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+.__ta-332 { text-align: center; }
+.__w-333 { width: 100%; }
+.__pt-334 { padding-top: 12px; }
+.__pb-335 { padding-bottom: 12px; }
+.__oy-336 { overflow-y: auto; }
+.__cur-337 { cursor: default; }
+.__w-338 { width: 100%; }
+.__btlr-343 { border-top-left-radius: 4px; }
+.__btrr-344 { border-top-right-radius: 4px; }
+.__bgc-345 { background-color: #FDFAF1; }
+body.dark .__bgc-345 { background-color: #232323; }
+.__as-347 { align-self: end; }
+.__pos-348 { position: absolute; }
+.__t-349 { top: 12px; }
+.__r-350 { right: 20px; }
+.__jc-351 { justify-content: right; }
+.__ali-352 { align-items: center; }
+.__g-353 { gap: 10px; }
+.__w-354 { width: 100%; }
+.__pb-355 { padding-bottom: 24px; }
+.__btlr-356 { border-top-left-radius: 4px; }
+.__btrr-357 { border-top-right-radius: 4px; }
+.__bblr-358 { border-bottom-left-radius: 4px; }
+.__bbrr-359 { border-bottom-right-radius: 4px; }
+.__ox-360 { overflow-x: auto; }
+.__oy-361 { overflow-y: auto; }
+.__c-362 { color: #707070 !important; }
+body.dark .__c-362 { color: #D9D9D9 !important; }
+.__c-362:visited { color: #707070 !important; }
+body.dark  .__c-362:visited { color: #D9D9D9 !important; }
+.__bgc-363 { background-color: #f5f5f5; }
+body.dark .__bgc-363 { background-color: #21222c; }
+.__rl-364 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 30px; }
+body.mobile .__rl-364 {  font-family: sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+.__mxh-365 { max-height: 300px; }
+.__pos-367 { position: absolute; }
+.__p-368 { padding: 6px; }
+.__bbrr-369 { border-bottom-right-radius: 4px; }
+.__b-370 { bottom: 12px; }
+.__r-371 { right: 12px; }
+.__z-372 { z-index: 999; }
+.__g-373 { gap: 16px; }
+.__g-374 { gap: 4px; }
+.__c-375 { color: #707070 !important; }
+body.dark .__c-375 { color: #D9D9D9 !important; }
+.__c-375:visited { color: #707070 !important; }
+body.dark  .__c-375:visited { color: #D9D9D9 !important; }
+.__rl-376 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+body.mobile .__rl-376 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+.__c-377 { color: #707070 !important; }
+body.dark .__c-377 { color: #D9D9D9 !important; }
+.__c-377:visited { color: #707070 !important; }
+body.dark  .__c-377:visited { color: #D9D9D9 !important; }
+.__rl-378 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+body.mobile .__rl-378 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+.__pos-379 { position: fixed; }
+.__p-380 { padding: 10px; }
+.__bw-381 { border-width: 1px; }
+.__br-382 { border-radius: 4px; }
+.__bc-383 { border-color: #4353ff; }
+.__b-384 { bottom: 90px; }
+.__r-385 { right: 50px; }
+.__z-386 { z-index: 99999999999999; }
+.__bgc-387 { background-color: #FFFFFF; }
+body.dark .__bgc-387 { background-color: #000000; }
+.__cur-388 { cursor: pointer; }
+.__as-389 { align-self: center; }
+.__w-390 { width: 19px; }
+.__h-391 { height: 19px; }
+</style>
+<script>
+(function() {
+let global = {
+};
+let main = function (parent) {
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let parenti0 = fastn_community_github_io_hero_doc_docs__home(parent, inherited, {
+package_name: "__repo_name__",
+package_full_name: "__user_name__.github.io/__repo_name__",
+license_url: null,
+github: "https://github.com/__user_name__/__repo_name__",
+category: fastn.module("__user_name___github_io___repo_name__", global),
+preview_url: "preview/"
+});
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["main"] = main;
+fastn_utils.createNestedObject(global, "fastn_community_github_io_hero_doc_assets__files.images.image.svg", fastn.recordInstance({
+light: "-/fastn-community.github.io/hero-doc/images/image.svg",
+dark: "-/fastn-community.github.io/hero-doc/images/image-dark.svg"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_assets__files.images.stamp.svg", fastn.recordInstance({
+light: "-/fastn-community.github.io/category-doc-components/images/stamp.svg",
+dark: "-/fastn-community.github.io/category-doc-components/images/stamp.svg"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_assets__files.images.mit_icon.svg", fastn.recordInstance({
+light: "-/fastn-community.github.io/category-doc-components/images/mit-icon.svg",
+dark: "-/fastn-community.github.io/category-doc-components/images/mit-icon-dark.svg"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_assets__files.images.icon_github.svg", fastn.recordInstance({
+light: "-/fastn-community.github.io/category-doc-components/images/icon-github.svg",
+dark: "-/fastn-community.github.io/category-doc-components/images/icon-github-dark.svg"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_assets__files.images.arrow.svg", fastn.recordInstance({
+light: "-/fastn-community.github.io/category-doc-components/images/arrow.svg",
+dark: "-/fastn-community.github.io/category-doc-components/images/arrow-dark.svg"
+}));
+let fastn_community_github_io_category_doc_components_categories_button__button = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+hover: fastn.mutable(false),
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Row);
+parenti0.addEventHandler(fastn_dom.Event.MouseEnter, function () {
+ftd.set_bool({
+a: __args__.hover,
+v: true,
+}, parenti0);
+});
+parenti0.addEventHandler(fastn_dom.Event.MouseLeave, function () {
+ftd.set_bool({
+a: __args__.hover,
+v: false,
+}, parenti0);
+});
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Rem(1), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Rem(0.75), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.BorderWidth, fastn_dom.Length.Px(1), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(5), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.BorderColor, __args__.border_color, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Color, __args__.color, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn.formula([__args__.background,
+__args__.on_hover_background,
+__args__.hover], function () {
+if (function () {
+return fastn_utils.getter(__args__.hover);
+}()) {
+return __args__.on_hover_background;
+} else {
+return __args__.background;
+}
+}
+), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("fine_print"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Link, __args__.link, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(13)), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.text, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.fastn_community_github_io_category_doc_components_assets__files.get("images").get("arrow").get("svg"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(22)), inherited);
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_category_doc_components_categories_button__button"] = fastn_community_github_io_category_doc_components_categories_button__button;
+let fastn_community_github_io_category_doc_components_categories_button__primary_button = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_community_github_io_category_doc_components_categories_button__button(parent, inherited, {
+text: __args__.text,
+link: __args__.link,
+background: fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("base")),
+on_hover_background: fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("hover")),
+color: inherited.get("colors").get("cta_primary").get("text"),
+border_color: inherited.get("colors").get("cta_primary").get("border")
+});
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_category_doc_components_categories_button__primary_button"] = fastn_community_github_io_category_doc_components_categories_button__primary_button;
+let fastn_community_github_io_category_doc_components_categories_button__secondary_button = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_community_github_io_category_doc_components_categories_button__button(parent, inherited, {
+text: __args__.text,
+link: __args__.link,
+background: fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_secondary").get("base")),
+on_hover_background: fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_secondary").get("hover")),
+color: inherited.get("colors").get("cta_secondary").get("text"),
+border_color: inherited.get("colors").get("cta_secondary").get("border")
+});
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_category_doc_components_categories_button__secondary_button"] = fastn_community_github_io_category_doc_components_categories_button__secondary_button;
+let fastn_community_github_io_category_doc_components_categories_section__hero_section = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+subtitle: null,
+thumbstamp: global.fastn_community_github_io_category_doc_components_assets__files.get("images").get("stamp").get("svg"),
+cta_primary_text: null,
+cta_primary_link: null,
+cta_secondary_text: null,
+cta_secondary_link: null,
+license_url: null,
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Row);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(50)), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Percent(46)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_large"), inherited);
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.subtitle
+], function () {
+return (fastn_utils.getter(__args__.subtitle) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.subtitle, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_small"), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(16)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.fastn_community_github_io_category_doc_components_assets__files.get("images").get("icon_github").get("svg"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(24)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.github_url, inherited);
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.license_url
+], function () {
+return (fastn_utils.getter(__args__.license_url) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.fastn_community_github_io_category_doc_components_assets__files.get("images").get("mit_icon").get("svg"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(24)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.license_url, inherited);
+return rooti0;
+});
+}
+]), inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(16)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.cta_primary_link,
+__args__.cta_primary_text
+], function () {
+return (fastn_utils.getter(__args__.cta_primary_text) !== null && fastn_utils.getter(__args__.cta_primary_link) !== null);
+}, function (root) {
+let rooti0 = fastn_community_github_io_category_doc_components_categories_button__primary_button(root, inherited, {
+text: __args__.cta_primary_text,
+link: __args__.cta_primary_link
+});
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.cta_secondary_link,
+__args__.cta_secondary_text
+], function () {
+return (fastn_utils.getter(__args__.cta_secondary_text) !== null && fastn_utils.getter(__args__.cta_secondary_link) !== null);
+}, function (root) {
+let rooti0 = fastn_community_github_io_category_doc_components_categories_button__secondary_button(root, inherited, {
+text: __args__.cta_secondary_text,
+link: __args__.cta_secondary_link
+});
+return rooti0;
+});
+}
+]), inherited);
+}
+]), inherited);
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.thumbstamp
+], function () {
+return (fastn_utils.getter(__args__.thumbstamp) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.thumbstamp, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(340)), inherited);
+return rooti0;
+});
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_category_doc_components_categories_section__hero_section"] = fastn_community_github_io_category_doc_components_categories_section__hero_section;
+fastn_utils.createNestedObject(global, "fastn_community_github_io_code_block_assets__files.static.copy.svg", fastn.recordInstance({
+light: "-/fastn-community.github.io/code-block/static/copy.svg",
+dark: "-/fastn-community.github.io/code-block/static/copy-dark.svg"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_code_block_assets__files.static.download_hover.svg", fastn.recordInstance({
+light: "-/fastn-community.github.io/code-block/static/download-hover.svg",
+dark: "-/fastn-community.github.io/code-block/static/download-hover-dark.svg"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_code_block_assets__files.static.download.svg", fastn.recordInstance({
+light: "-/fastn-community.github.io/code-block/static/download.svg",
+dark: "-/fastn-community.github.io/code-block/static/download-dark.svg"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_code_block_assets__files.static.tick.svg", fastn.recordInstance({
+light: "-/fastn-community.github.io/code-block/static/tick.svg",
+dark: "-/fastn-community.github.io/code-block/static/tick.svg"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_code_block_assets__files.static.copy_hover.svg", fastn.recordInstance({
+light: "-/fastn-community.github.io/code-block/static/copy-hover.svg",
+dark: "-/fastn-community.github.io/code-block/static/copy-hover-dark.svg"
+}));
+let fastn_community_github_io_code_block__download_text = function (args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = args;
+return (download_text(__args__.filename, __args__.text));
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_code_block__download_text"] = fastn_community_github_io_code_block__download_text;
+let fastn_community_github_io_code_block__code = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+caption: null,
+download: null,
+lang: "ftd",
+copy: true,
+copy_text: fastn.mutable("null"),
+copy_mouse_in: fastn.mutable(false),
+download_mouse_in: fastn.mutable(false),
+mouse_in: fastn.mutable(false),
+max_height: null,
+max_width: null,
+line_numbers: false,
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+__args__.text = __args__.text ? __args__.text : __args__.body;
+__args__.clean_code = __args__.clean_code ? __args__.clean_code : fastn.formula([__args__.text,
+__args__.lang], function () {
+return ftd.clean_code({
+a: __args__.text,
+lang: __args__.lang,
+});
+});
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+parenti0.addEventHandler(fastn_dom.Event.MouseEnter, function () {
+ftd.set_bool({
+a: __args__.mouse_in,
+v: true,
+}, parenti0);
+});
+parenti0.addEventHandler(fastn_dom.Event.MouseLeave, function () {
+ftd.set_bool({
+a: __args__.mouse_in,
+v: false,
+}, parenti0);
+});
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingTop, fastn_dom.Length.Px(12), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingBottom, fastn_dom.Length.Px(12), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.OverflowY, fastn_dom.Overflow.Auto, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Cursor, fastn_dom.Cursor.Default, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.caption,
+__args__.copy,
+__args__.download
+], function () {
+return (fastn_utils.getter(__args__.caption) !== null || fastn_utils.getter(__args__.download) !== null || fastn_utils.getter(__args__.copy));
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingLeft, fastn.formula([__args__.caption], function () {
+if (function () {
+return (fastn_utils.getter(__args__.caption) !== null);
+}()) {
+return fastn_dom.Length.Px(20);
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingRight, fastn.formula([__args__.caption], function () {
+if (function () {
+return (fastn_utils.getter(__args__.caption) !== null);
+}()) {
+return fastn_dom.Length.Px(20);
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingTop, fastn.formula([__args__.caption], function () {
+if (function () {
+return (fastn_utils.getter(__args__.caption) !== null);
+}()) {
+return fastn_dom.Length.Px(10);
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingBottom, fastn.formula([__args__.caption], function () {
+if (function () {
+return (fastn_utils.getter(__args__.caption) !== null);
+}()) {
+return fastn_dom.Length.Px(10);
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderTopLeftRadius, fastn_dom.Length.Px(4), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderTopRightRadius, fastn_dom.Length.Px(4), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("step_1")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MaxWidth, fastn.formula([__args__.max_width,
+__args__.max_width], function () {
+if (function () {
+return (fastn_utils.getter(__args__.max_width) !== null);
+}()) {
+return __args__.max_width;
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.caption
+], function () {
+return (fastn_utils.getter(__args__.caption) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.caption, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Start, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.copy
+], function () {
+return fastn_utils.getter(__args__.copy);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.addEventHandler(fastn_dom.Event.MouseLeave, function () {
+ftd.set_string({
+a: __args__.copy_text,
+v: "null",
+}, rooti0);
+});
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.End, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Anchor, fastn_dom.Anchor.Parent, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Top, fastn_dom.Length.Px(12), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Right, fastn.formula([__args__.download], function () {
+if (function () {
+return (fastn_utils.getter(__args__.download) !== null);
+}()) {
+return fastn_dom.Length.Px(56);
+} else {
+return fastn_dom.Length.Px(20);
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Right, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(10)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.copy_text,
+__args__.mouse_in
+], function () {
+return (fastn_utils.getter(__args__.copy_text) == "null" && fastn_utils.getter(__args__.mouse_in));
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, fastn.formula([global.fastn_community_github_io_code_block_assets__files.get("static").get("copy").get("svg"),
+global.fastn_community_github_io_code_block_assets__files.get("static").get("copy_hover").get("svg"),
+__args__.copy_mouse_in], function () {
+if (function () {
+return fastn_utils.getter(__args__.copy_mouse_in);
+}()) {
+return global.fastn_community_github_io_code_block_assets__files.get("static").get("copy_hover").get("svg");
+} else {
+return global.fastn_community_github_io_code_block_assets__files.get("static").get("copy").get("svg");
+}
+}
+), inherited);
+rooti0.addEventHandler(fastn_dom.Event.MouseEnter, function () {
+ftd.set_bool({
+a: __args__.copy_mouse_in,
+v: true,
+}, rooti0);
+});
+rooti0.addEventHandler(fastn_dom.Event.MouseLeave, function () {
+ftd.set_bool({
+a: __args__.copy_mouse_in,
+v: false,
+}, rooti0);
+});
+rooti0.addEventHandler(fastn_dom.Event.Click, function () {
+ftd.copy_to_clipboard({
+a: __args__.clean_code,
+}, rooti0);
+});
+rooti0.addEventHandler(fastn_dom.Event.Click, function () {
+ftd.set_string({
+a: __args__.copy_text,
+v: "Copied!",
+}, rooti0);
+});
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(18)), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.copy_text
+], function () {
+return (fastn_utils.getter(__args__.copy_text) !== "null");
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.fastn_community_github_io_code_block_assets__files.get("static").get("tick").get("svg"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(18)), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.copy_text
+], function () {
+return (fastn_utils.getter(__args__.copy_text) !== "null");
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.copy_text, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+return rooti0;
+});
+}
+]), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.download,
+__args__.mouse_in
+], function () {
+return (fastn_utils.getter(__args__.download) !== null && fastn_utils.getter(__args__.mouse_in));
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, fastn.formula([global.fastn_community_github_io_code_block_assets__files.get("static").get("download").get("svg"),
+global.fastn_community_github_io_code_block_assets__files.get("static").get("download_hover").get("svg"),
+__args__.download_mouse_in], function () {
+if (function () {
+return fastn_utils.getter(__args__.download_mouse_in);
+}()) {
+return global.fastn_community_github_io_code_block_assets__files.get("static").get("download_hover").get("svg");
+} else {
+return global.fastn_community_github_io_code_block_assets__files.get("static").get("download").get("svg");
+}
+}
+), inherited);
+rooti0.addEventHandler(fastn_dom.Event.MouseEnter, function () {
+ftd.set_bool({
+a: __args__.download_mouse_in,
+v: true,
+}, rooti0);
+});
+rooti0.addEventHandler(fastn_dom.Event.MouseLeave, function () {
+ftd.set_bool({
+a: __args__.download_mouse_in,
+v: false,
+}, rooti0);
+});
+rooti0.addEventHandler(fastn_dom.Event.Click, function () {
+fastn_community_github_io_code_block__download_text({
+filename: __args__.download,
+text: __args__.clean_code,
+}, rooti0);
+});
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.End, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Anchor, fastn_dom.Anchor.Parent, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(20)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(20)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Top, fastn_dom.Length.Px(12), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Right, fastn_dom.Length.Px(20), inherited);
+return rooti0;
+});
+}
+]), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+ftd.dark_mode
+], function () {
+return fastn_utils.getter(ftd.dark_mode);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Code);
+rooti0.setProperty(fastn_dom.PropertyKind.Code, __args__.body, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.CodeLanguage, __args__.lang, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.CodeTheme, "fastn-theme.dark", inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.CodeShowLineNumber, fastn.formula([__args__.line_numbers], function () {
+if (function () {
+return fastn_utils.getter(__args__.line_numbers);
+}()) {
+return true;
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingBottom, fastn_dom.Length.Px(24), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderTopLeftRadius, fastn.formula([__args__.caption], function () {
+if (function () {
+return (fastn_utils.getter(__args__.caption) == null);
+}()) {
+return fastn_dom.Length.Px(4);
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderTopRightRadius, fastn.formula([__args__.caption], function () {
+if (function () {
+return (fastn_utils.getter(__args__.caption) == null);
+}()) {
+return fastn_dom.Length.Px(4);
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderBottomLeftRadius, fastn.formula([__args__.caption], function () {
+if (function () {
+return (fastn_utils.getter(__args__.caption) == null);
+}()) {
+return fastn_dom.Length.Px(4);
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderBottomRightRadius, fastn.formula([__args__.caption], function () {
+if (function () {
+return (fastn_utils.getter(__args__.caption) == null);
+}()) {
+return fastn_dom.Length.Px(4);
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.OverflowX, fastn_dom.Overflow.Auto, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.OverflowY, fastn_dom.Overflow.Auto, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("code")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MaxHeight, fastn.formula([__args__.max_height,
+__args__.max_height], function () {
+if (function () {
+return (fastn_utils.getter(__args__.max_height) !== null);
+}()) {
+return __args__.max_height;
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MaxWidth, fastn.formula([__args__.max_width,
+__args__.max_width], function () {
+if (function () {
+return (fastn_utils.getter(__args__.max_width) !== null);
+}()) {
+return __args__.max_width;
+}
+}
+), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+ftd.dark_mode
+], function () {
+return (!fastn_utils.getter(ftd.dark_mode));
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Code);
+rooti0.setProperty(fastn_dom.PropertyKind.Code, __args__.body, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.CodeLanguage, __args__.lang, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.CodeTheme, "fastn-theme.light", inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.CodeShowLineNumber, false, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingBottom, fastn_dom.Length.Px(24), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderTopLeftRadius, fastn.formula([__args__.caption], function () {
+if (function () {
+return (fastn_utils.getter(__args__.caption) == null);
+}()) {
+return fastn_dom.Length.Px(4);
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderTopRightRadius, fastn.formula([__args__.caption], function () {
+if (function () {
+return (fastn_utils.getter(__args__.caption) == null);
+}()) {
+return fastn_dom.Length.Px(4);
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderBottomLeftRadius, fastn.formula([__args__.caption], function () {
+if (function () {
+return (fastn_utils.getter(__args__.caption) == null);
+}()) {
+return fastn_dom.Length.Px(4);
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderBottomRightRadius, fastn.formula([__args__.caption], function () {
+if (function () {
+return (fastn_utils.getter(__args__.caption) == null);
+}()) {
+return fastn_dom.Length.Px(4);
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.OverflowX, fastn_dom.Overflow.Auto, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.OverflowY, fastn_dom.Overflow.Auto, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("code")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MaxHeight, fastn.formula([__args__.max_height,
+__args__.max_height], function () {
+if (function () {
+return (fastn_utils.getter(__args__.max_height) !== null);
+}()) {
+return __args__.max_height;
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MaxWidth, fastn.formula([__args__.max_width,
+__args__.max_width], function () {
+if (function () {
+return (fastn_utils.getter(__args__.max_width) !== null);
+}()) {
+return __args__.max_width;
+}
+}
+), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.lang
+], function () {
+return (fastn_utils.getter(__args__.lang) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+rooti0.setProperty(fastn_dom.PropertyKind.Anchor, fastn_dom.Anchor.Parent, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Padding, fastn_dom.Length.Px(6), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderBottomRightRadius, fastn_dom.Length.Px(4), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Bottom, fastn_dom.Length.Px(12), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Right, fastn_dom.Length.Px(12), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.ZIndex, 999, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(16)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.download
+], function () {
+return (fastn_utils.getter(__args__.download) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.download, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("fine_print"), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(4)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, "Lang:", inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("fine_print"), inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.lang, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("fine_print"), inherited);
+}
+]), inherited);
+}
+]), inherited);
+}
+]), inherited);
+return rooti0;
+});
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_code_block__code"] = fastn_community_github_io_code_block__code;
+let fastn_community_github_io_category_doc_components_categories_code_block__code_with_preview = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+preview: fastn.mutableList([]),
+lang: "ftd",
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(28)), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(5), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, __args__.preview, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_community_github_io_code_block__code(root, inherited, {
+body: __args__.code,
+lang: __args__.lang,
+max_height: fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(300))
+});
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_category_doc_components_categories_code_block__code_with_preview"] = fastn_community_github_io_category_doc_components_categories_code_block__code_with_preview;
+let fastn_community_github_io_hero_doc_docs__sample_code = function (args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = args;
+return (";; In FASTN.ftd \n" + "-- fastn.dependency:" + fastn_utils.getter(__args__.a) + "\n\n" + ";; In the file where you want to add the header (e.g., `index.ftd`)\n\n" + ";; Add this at the top of the file\n" + "-- import: " + fastn_utils.getter(__args__.a) + " as hero\n\n" + ";; Add this where you want to show the component\n" + "-- hero." + fastn_utils.getter(__args__.cname) + ": Title copy goes here\n" + "cta-primary-text: View more\n" + "cta-primary-url: /\n" + "cta-secondary-text: Preview\n" + "cta-secondary-url: /\n" + "image: $assets.files.image.svg\n\n" + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum. Proin viverra nulla sem, vel molestie lacus volutpat nec. Integer ut bibendum erat.");
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_hero_doc_docs__sample_code"] = fastn_community_github_io_hero_doc_docs__sample_code;
+let fastn_community_github_io_category_doc_components_categories_previews__preview = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+title: null,
+subtitle: null,
+uis: fastn.mutableList([]),
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Padding, fastn_dom.Length.Px(40), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(20), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("step_2")), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.title
+], function () {
+return (fastn_utils.getter(__args__.title) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(8), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_small"), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.subtitle
+], function () {
+return (fastn_utils.getter(__args__.subtitle) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.subtitle, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(16), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_small"), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_utils.getter(__args__.uis).forLoop(root, function (root, item, index) {
+let rooti0 = fastn_utils.getStaticValue(item) (root, inherited);
+return rooti0;
+});
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_category_doc_components_categories_previews__preview"] = fastn_community_github_io_category_doc_components_categories_previews__preview;
+let fastn_community_github_io_hero_doc_docs__sample_code_without_image = function (args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = args;
+return (";; In FASTN.ftd \n" + "-- fastn.dependency:" + fastn_utils.getter(__args__.a) + "\n\n" + ";; In the file where you want to add the header (e.g., `index.ftd`)\n\n" + ";; Add this at the top of the file\n" + "-- import: " + fastn_utils.getter(__args__.a) + " as hero\n\n" + ";; Add this where you want to show the component\n" + "-- hero." + fastn_utils.getter(__args__.cname) + ": Title copy goes here\n" + "cta-primary-text: View more\n" + "cta-primary-url: /\n" + "cta-secondary-text: Preview\n" + "cta-secondary-url: /\n" + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum. Proin viverra nulla sem, vel molestie lacus volutpat nec. Integer ut bibendum erat.");
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_hero_doc_docs__sample_code_without_image"] = fastn_community_github_io_hero_doc_docs__sample_code_without_image;
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__base_", fastn.recordInstance({
+light: "#FFFFFF",
+dark: "#000000"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__step_1_", fastn.recordInstance({
+light: "#FDFAF1",
+dark: "#232323"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__step_2_", fastn.recordInstance({
+light: "#fbf3dc",
+dark: "#2b2b2b"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__overlay_", fastn.recordInstance({
+light: "#000000",
+dark: "#000000"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__code_", fastn.recordInstance({
+light: "#f5f5f5",
+dark: "#21222c"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__background_", fastn.recordInstance({
+base: global.fastn_community_github_io_category_doc_components_categories_color_scheme__base_,
+step_1: global.fastn_community_github_io_category_doc_components_categories_color_scheme__step_1_,
+step_2: global.fastn_community_github_io_category_doc_components_categories_color_scheme__step_2_,
+overlay: global.fastn_community_github_io_category_doc_components_categories_color_scheme__overlay_,
+code: global.fastn_community_github_io_category_doc_components_categories_color_scheme__code_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__border_", fastn.recordInstance({
+light: "#4353ff",
+dark: "#4353ff"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__border_strong_", fastn.recordInstance({
+light: "#D9D9D9",
+dark: "#333333"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__text_", fastn.recordInstance({
+light: "#707070",
+dark: "#D9D9D9"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__text_strong_", fastn.recordInstance({
+light: "#333333",
+dark: "#FFFFFF"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__shadow_", fastn.recordInstance({
+light: "#EF8435",
+dark: "#EF8435"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__scrim_", fastn.recordInstance({
+light: "#393939",
+dark: "#393939"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_base_", fastn.recordInstance({
+light: "#EF8435",
+dark: "#EF8435"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_hover_", fastn.recordInstance({
+light: "#D77730",
+dark: "#b46022"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_pressed_", fastn.recordInstance({
+light: "#BF6A2A",
+dark: "#BF6A2A"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_disabled_", fastn.recordInstance({
+light: "#FAD9C0",
+dark: "#FAD9C0"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_focused_", fastn.recordInstance({
+light: "#B36328",
+dark: "#B36328"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_border_", fastn.recordInstance({
+light: "#F3A063",
+dark: "#F3A063"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_text_", fastn.recordInstance({
+light: "#512403",
+dark: "#FFFFFF"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_text_disabled_", fastn.recordInstance({
+light: "#f2a164",
+dark: "#f2a164"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_border_disabled_", fastn.recordInstance({
+light: "#fad9c0",
+dark: "#fad9c0"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_", fastn.recordInstance({
+base: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_base_,
+hover: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_hover_,
+pressed: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_pressed_,
+disabled: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_disabled_,
+focused: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_focused_,
+border: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_border_,
+border_disabled: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_border_disabled_,
+text: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_text_,
+text_disabled: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_text_disabled_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_base_", fastn.recordInstance({
+light: "#EBE8E5",
+dark: "#d3cec8"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_hover_", fastn.recordInstance({
+light: "#D4D1CE",
+dark: "#a3a19f"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_pressed_", fastn.recordInstance({
+light: "#BCBAB7",
+dark: "#BCBAB7"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_disabled_", fastn.recordInstance({
+light: "#F9F8F7",
+dark: "#F9F8F7"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_focused_", fastn.recordInstance({
+light: "#B0AEAC",
+dark: "#B0AEAC"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_border_", fastn.recordInstance({
+light: "#B0AEAC",
+dark: "#B0AEAC"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_text_", fastn.recordInstance({
+light: "rgb(51, 51, 51)",
+dark: "#333333"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_text_disabled_", fastn.recordInstance({
+light: "#304655",
+dark: "#fff"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_border_disabled_", fastn.recordInstance({
+light: "#304655",
+dark: "#f1dac0"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_", fastn.recordInstance({
+base: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_base_,
+hover: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_hover_,
+pressed: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_pressed_,
+disabled: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_disabled_,
+focused: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_focused_,
+border: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_border_,
+border_disabled: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_border_disabled_,
+text: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_text_,
+text_disabled: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_text_disabled_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_base_", fastn.recordInstance({
+light: "#4A6490",
+dark: "#4A6490"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_hover_", fastn.recordInstance({
+light: "#3d5276",
+dark: "#3d5276"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_pressed_", fastn.recordInstance({
+light: "#2b3a54",
+dark: "#2b3a54"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_disabled_", fastn.recordInstance({
+light: "rgba(74, 100, 144, 0.4)",
+dark: "rgba(74, 100, 144, 0.4)"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_focused_", fastn.recordInstance({
+light: "#6882b1",
+dark: "#6882b1"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_border_", fastn.recordInstance({
+light: "#4e6997",
+dark: "#4e6997"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_text_", fastn.recordInstance({
+light: "#ffffff",
+dark: "#ffffff"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_text_disabled_", fastn.recordInstance({
+light: "#304655",
+dark: "#fff"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_border_disabled_", fastn.recordInstance({
+light: "#304655",
+dark: "#f1dac0"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_", fastn.recordInstance({
+base: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_base_,
+hover: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_hover_,
+pressed: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_pressed_,
+disabled: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_disabled_,
+focused: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_focused_,
+border: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_border_,
+border_disabled: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_border_disabled_,
+text: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_text_,
+text_disabled: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_text_disabled_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_base_", fastn.recordInstance({
+light: "#F9E4E1",
+dark: "#F9E4E1"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_hover_", fastn.recordInstance({
+light: "#F1BDB6",
+dark: "#F1BDB6"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_pressed_", fastn.recordInstance({
+light: "#D46A63",
+dark: "#D46A63"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_disabled_", fastn.recordInstance({
+light: "#FAECEB",
+dark: "#FAECEB"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_focused_", fastn.recordInstance({
+light: "#D97973",
+dark: "#D97973"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_border_", fastn.recordInstance({
+light: "#E9968C",
+dark: "#E9968C"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_text_", fastn.recordInstance({
+light: "#D84836",
+dark: "#D84836"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_text_disabled_", fastn.recordInstance({
+light: "#304655",
+dark: "#fff"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_border_disabled_", fastn.recordInstance({
+light: "#304655",
+dark: "#f1dac0"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_", fastn.recordInstance({
+base: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_base_,
+hover: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_hover_,
+pressed: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_pressed_,
+disabled: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_disabled_,
+focused: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_focused_,
+border: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_border_,
+border_disabled: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_border_disabled_,
+text: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_text_,
+text_disabled: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_text_disabled_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__accent_primary_", fastn.recordInstance({
+light: "#EF8435",
+dark: "#EF8435"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__accent_secondary_", fastn.recordInstance({
+light: "#EBE8E5",
+dark: "#EBE8E5"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__accent_tertiary_", fastn.recordInstance({
+light: "#c5cbd7",
+dark: "#c5cbd7"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__accent_", fastn.recordInstance({
+primary: global.fastn_community_github_io_category_doc_components_categories_color_scheme__accent_primary_,
+secondary: global.fastn_community_github_io_category_doc_components_categories_color_scheme__accent_secondary_,
+tertiary: global.fastn_community_github_io_category_doc_components_categories_color_scheme__accent_tertiary_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__error_base_", fastn.recordInstance({
+light: "#F9E4E1",
+dark: "#4f2a25c9"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__error_text_", fastn.recordInstance({
+light: "#D84836",
+dark: "#D84836"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__error_border_", fastn.recordInstance({
+light: "#E9968C",
+dark: "#E9968C"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__error_btb_", fastn.recordInstance({
+base: global.fastn_community_github_io_category_doc_components_categories_color_scheme__error_base_,
+text: global.fastn_community_github_io_category_doc_components_categories_color_scheme__error_text_,
+border: global.fastn_community_github_io_category_doc_components_categories_color_scheme__error_border_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__success_base_", fastn.recordInstance({
+light: "#DCEFE4",
+dark: "#033a1bb8"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__success_text_", fastn.recordInstance({
+light: "#3E8D61",
+dark: "#159f52"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__success_border_", fastn.recordInstance({
+light: "#95D0AF",
+dark: "#95D0AF"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__success_btb_", fastn.recordInstance({
+base: global.fastn_community_github_io_category_doc_components_categories_color_scheme__success_base_,
+text: global.fastn_community_github_io_category_doc_components_categories_color_scheme__success_text_,
+border: global.fastn_community_github_io_category_doc_components_categories_color_scheme__success_border_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__info_base_", fastn.recordInstance({
+light: "#DAE7FB",
+dark: "#233a5dc7"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__info_text_", fastn.recordInstance({
+light: "#5290EC",
+dark: "#5290EC"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__info_border_", fastn.recordInstance({
+light: "#7EACF1",
+dark: "#7EACF1"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__info_btb_", fastn.recordInstance({
+base: global.fastn_community_github_io_category_doc_components_categories_color_scheme__info_base_,
+text: global.fastn_community_github_io_category_doc_components_categories_color_scheme__info_text_,
+border: global.fastn_community_github_io_category_doc_components_categories_color_scheme__info_border_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__warning_base_", fastn.recordInstance({
+light: "#FDF7F1",
+dark: "#3b2c1ee6"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__warning_text_", fastn.recordInstance({
+light: "#E78B3E",
+dark: "#E78B3E"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__warning_border_", fastn.recordInstance({
+light: "#F2C097",
+dark: "#F2C097"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__warning_btb_", fastn.recordInstance({
+base: global.fastn_community_github_io_category_doc_components_categories_color_scheme__warning_base_,
+text: global.fastn_community_github_io_category_doc_components_categories_color_scheme__warning_text_,
+border: global.fastn_community_github_io_category_doc_components_categories_color_scheme__warning_border_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__custom_one_", fastn.recordInstance({
+light: "#4AA35C",
+dark: "#4AA35C"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__custom_two_", fastn.recordInstance({
+light: "#5C2860",
+dark: "#5C2860"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__custom_three_", fastn.recordInstance({
+light: "#EBBE52",
+dark: "#EBBE52"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__custom_four_", fastn.recordInstance({
+light: "#FDFAF1",
+dark: "#111111"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__custom_five_", fastn.recordInstance({
+light: "#FBF5E2",
+dark: "#222222"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__custom_six_", fastn.recordInstance({
+light: "#ef8dd6",
+dark: "#ef8dd6"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__custom_seven_", fastn.recordInstance({
+light: "#7564be",
+dark: "#7564be"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__custom_eight_", fastn.recordInstance({
+light: "#d554b3",
+dark: "#d554b3"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__custom_nine_", fastn.recordInstance({
+light: "#ec8943",
+dark: "#ec8943"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__custom_ten_", fastn.recordInstance({
+light: "#da7a4a",
+dark: "#da7a4a"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__custom_", fastn.recordInstance({
+one: global.fastn_community_github_io_category_doc_components_categories_color_scheme__custom_one_,
+two: global.fastn_community_github_io_category_doc_components_categories_color_scheme__custom_two_,
+three: global.fastn_community_github_io_category_doc_components_categories_color_scheme__custom_three_,
+four: global.fastn_community_github_io_category_doc_components_categories_color_scheme__custom_four_,
+five: global.fastn_community_github_io_category_doc_components_categories_color_scheme__custom_five_,
+six: global.fastn_community_github_io_category_doc_components_categories_color_scheme__custom_six_,
+seven: global.fastn_community_github_io_category_doc_components_categories_color_scheme__custom_seven_,
+eight: global.fastn_community_github_io_category_doc_components_categories_color_scheme__custom_eight_,
+nine: global.fastn_community_github_io_category_doc_components_categories_color_scheme__custom_nine_,
+ten: global.fastn_community_github_io_category_doc_components_categories_color_scheme__custom_ten_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_category_doc_components_categories_color_scheme__main", fastn.recordInstance({
+background: global.fastn_community_github_io_category_doc_components_categories_color_scheme__background_,
+border: global.fastn_community_github_io_category_doc_components_categories_color_scheme__border_,
+border_strong: global.fastn_community_github_io_category_doc_components_categories_color_scheme__border_strong_,
+text: global.fastn_community_github_io_category_doc_components_categories_color_scheme__text_,
+text_strong: global.fastn_community_github_io_category_doc_components_categories_color_scheme__text_strong_,
+shadow: global.fastn_community_github_io_category_doc_components_categories_color_scheme__shadow_,
+scrim: global.fastn_community_github_io_category_doc_components_categories_color_scheme__scrim_,
+cta_primary: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_primary_,
+cta_secondary: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_secondary_,
+cta_tertiary: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_tertiary_,
+cta_danger: global.fastn_community_github_io_category_doc_components_categories_color_scheme__cta_danger_,
+accent: global.fastn_community_github_io_category_doc_components_categories_color_scheme__accent_,
+error: global.fastn_community_github_io_category_doc_components_categories_color_scheme__error_btb_,
+success: global.fastn_community_github_io_category_doc_components_categories_color_scheme__success_btb_,
+info: global.fastn_community_github_io_category_doc_components_categories_color_scheme__info_btb_,
+warning: global.fastn_community_github_io_category_doc_components_categories_color_scheme__warning_btb_,
+custom: global.fastn_community_github_io_category_doc_components_categories_color_scheme__custom_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_mode_switcher_assets__files.static.system_mode_active.png", fastn.recordInstance({
+light: "-/fastn-community.github.io/dark-mode-switcher/static/system-mode-active.png",
+dark: "-/fastn-community.github.io/dark-mode-switcher/static/system-mode-active-dark.png"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_mode_switcher_assets__files.static.dark_mode_active_dark.png", fastn.recordInstance({
+light: "-/fastn-community.github.io/dark-mode-switcher/static/dark-mode-active-dark.png",
+dark: "-/fastn-community.github.io/dark-mode-switcher/static/dark-mode-active-dark.png"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_mode_switcher_assets__files.static.light_mode_active.png", fastn.recordInstance({
+light: "-/fastn-community.github.io/dark-mode-switcher/static/light-mode-active.png",
+dark: "-/fastn-community.github.io/dark-mode-switcher/static/light-mode-active-dark.png"
+}));
+let fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Row);
+parenti0.setProperty(fastn_dom.PropertyKind.Anchor, fastn_dom.Anchor.Window, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Padding, fastn_dom.Length.Px(10), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.BorderWidth, fastn_dom.Length.Px(1), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(4), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.BorderColor, inherited.get("colors").get("border"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Bottom, fastn.formula([ftd.device], function () {
+if (function () {
+return (fastn_utils.getter(ftd.device) == "mobile");
+}()) {
+return fastn_dom.Length.Px(25);
+} else {
+return fastn_dom.Length.Px(90);
+}
+}
+), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Right, fastn.formula([ftd.device], function () {
+if (function () {
+return (fastn_utils.getter(ftd.device) == "mobile");
+}()) {
+return fastn_dom.Length.Px(25);
+} else {
+return fastn_dom.Length.Px(50);
+}
+}
+), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.ZIndex, 99999999999999, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+ftd.follow_system_dark_mode
+], function () {
+return fastn_utils.getter(ftd.follow_system_dark_mode);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.addEventHandler(fastn_dom.Event.Click, function () {
+ftd.enable_light_mode({
+}, rooti0);
+});
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.fastn_community_github_io_dark_mode_switcher_assets__files.get("static").get("system_mode_active").get("png"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(19)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(19)), inherited);
+}
+]), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+ftd.dark_mode,
+ftd.follow_system_dark_mode
+], function () {
+return (!fastn_utils.getter(ftd.dark_mode) && !fastn_utils.getter(ftd.follow_system_dark_mode));
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.addEventHandler(fastn_dom.Event.Click, function () {
+ftd.enable_dark_mode({
+}, rooti0);
+});
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.fastn_community_github_io_dark_mode_switcher_assets__files.get("static").get("light_mode_active").get("png"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(19)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(19)), inherited);
+}
+]), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+ftd.dark_mode,
+ftd.follow_system_dark_mode
+], function () {
+return (fastn_utils.getter(ftd.dark_mode) && !fastn_utils.getter(ftd.follow_system_dark_mode));
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.addEventHandler(fastn_dom.Event.Click, function () {
+ftd.enable_system_mode({
+}, rooti0);
+});
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.fastn_community_github_io_dark_mode_switcher_assets__files.get("static").get("dark_mode_active_dark").get("png"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(19)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(19)), inherited);
+}
+]), inherited);
+return rooti0;
+});
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float"] = fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float;
+let fastn_community_github_io_category_doc_components_categories_site__page = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+colors: global.fastn_community_github_io_category_doc_components_categories_color_scheme__main,
+uis: fastn.mutableList([]),
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Document);
+let __$$inherited$$__parenti0 = fastn.recordInstance({
+...inherited.getAllFields(),
+colors: __args__.colors,
+types: inherited.get("types")
+});
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(65), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(50), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(80)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_utils.getter(__args__.uis).forLoop(root, function (root, item, index) {
+let rooti0 = fastn_utils.getStaticValue(item) (root, inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float(root, inherited);
+}
+]), inherited);
+}
+]), __$$inherited$$__parenti0);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_category_doc_components_categories_site__page"] = fastn_community_github_io_category_doc_components_categories_site__page;
+let fastn_community_github_io_hero_doc__stack = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+subtitle: null,
+cta_primary_text: null,
+cta_primary_url: null,
+cta_secondary_text: null,
+cta_secondary_url: null,
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(180), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(50), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(20)), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_large"), inherited);
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.subtitle
+], function () {
+return (fastn_utils.getter(__args__.subtitle) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.subtitle, inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(50)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.cta_primary_text
+], function () {
+return (fastn_utils.getter(__args__.cta_primary_text) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_primary_text, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("cta_primary").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("base")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.cta_primary_url, inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.cta_secondary_text
+], function () {
+return (fastn_utils.getter(__args__.cta_secondary_text) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_secondary_text, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("cta_secondary").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_secondary").get("base")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.cta_secondary_url, inherited);
+return rooti0;
+});
+}
+]), inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.image, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_hero_doc__stack"] = fastn_community_github_io_hero_doc__stack;
+let fastn_community_github_io_hero_doc__heading_center = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+subtitle: null,
+cta_primary_text: null,
+cta_primary_url: null,
+cta_secondary_text: null,
+cta_secondary_url: null,
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(80), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(50), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(20)), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_large"), inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(50)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.subtitle
+], function () {
+return (fastn_utils.getter(__args__.subtitle) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.subtitle, inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(20)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.cta_primary_text
+], function () {
+return (fastn_utils.getter(__args__.cta_primary_text) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_primary_text, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("cta_primary").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("base")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.cta_primary_url, inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.cta_secondary_text
+], function () {
+return (fastn_utils.getter(__args__.cta_secondary_text) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_secondary_text, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("cta_secondary").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_secondary").get("base")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.cta_secondary_url, inherited);
+return rooti0;
+});
+}
+]), inherited);
+}
+]), inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.image, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+}
+]), inherited);
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_hero_doc__heading_center"] = fastn_community_github_io_hero_doc__heading_center;
+let fastn_community_github_io_hero_doc__heading_left = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+subtitle: null,
+cta_primary_text: null,
+cta_primary_url: null,
+cta_secondary_text: null,
+cta_secondary_url: null,
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Row);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(80), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(50), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(50)), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([], function () {
+fastn_dom.Resizing.Fixed(fastn_dom.Length.Percent(60))
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_medium"), inherited);
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.subtitle
+], function () {
+return (fastn_utils.getter(__args__.subtitle) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.subtitle, inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(20)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.cta_primary_text
+], function () {
+return (fastn_utils.getter(__args__.cta_primary_text) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_primary_text, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("cta_primary").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("base")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.cta_primary_url, inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.cta_secondary_text
+], function () {
+return (fastn_utils.getter(__args__.cta_secondary_text) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_secondary_text, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("cta_secondary").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_secondary").get("base")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.cta_secondary_url, inherited);
+return rooti0;
+});
+}
+]), inherited);
+}
+]), inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.image, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Percent(40)), inherited);
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_hero_doc__heading_left"] = fastn_community_github_io_hero_doc__heading_left;
+let fastn_community_github_io_hero_doc__heading_right = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+subtitle: null,
+cta_primary_text: null,
+cta_primary_url: null,
+cta_secondary_text: null,
+cta_secondary_url: null,
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Row);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(80), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(50), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(50)), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.image, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Percent(40)), inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([], function () {
+fastn_dom.Resizing.Fixed(fastn_dom.Length.Percent(60))
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_medium"), inherited);
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.subtitle
+], function () {
+return (fastn_utils.getter(__args__.subtitle) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.subtitle, inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(20)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.cta_primary_text
+], function () {
+return (fastn_utils.getter(__args__.cta_primary_text) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_primary_text, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("cta_primary").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("base")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.cta_primary_url, inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.cta_secondary_text
+], function () {
+return (fastn_utils.getter(__args__.cta_secondary_text) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_secondary_text, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("cta_secondary").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_secondary").get("base")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.cta_secondary_url, inherited);
+return rooti0;
+});
+}
+]), inherited);
+}
+]), inherited);
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_hero_doc__heading_right"] = fastn_community_github_io_hero_doc__heading_right;
+let fastn_community_github_io_hero_doc__without_image = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+subtitle: null,
+cta_primary_text: null,
+cta_primary_url: null,
+cta_secondary_text: null,
+cta_secondary_url: null,
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(180), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(50), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(10)), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_medium"), inherited);
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.subtitle
+], function () {
+return (fastn_utils.getter(__args__.subtitle) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.subtitle, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(20)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.cta_primary_text
+], function () {
+return (fastn_utils.getter(__args__.cta_primary_text) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_primary_text, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("cta_primary").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("base")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.cta_primary_url, inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+__args__.cta_secondary_text
+], function () {
+return (fastn_utils.getter(__args__.cta_secondary_text) !== null);
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_secondary_text, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("cta_secondary").get("text"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_secondary").get("base")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.cta_secondary_url, inherited);
+return rooti0;
+});
+}
+]), inherited);
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_hero_doc__without_image"] = fastn_community_github_io_hero_doc__without_image;
+let fastn_community_github_io_hero_doc_docs__home = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+package_name: "hero-doc",
+package_full_name: "fastn-community.github.io/hero-doc",
+license_url: "https://github.com/fastn-community/hero-doc/blob/home/LICENSE",
+github: "https://github.com/fastn-community/hero-doc/",
+category: fastn.module("fastn_community_github_io_hero_doc", global),
+image: global.fastn_community_github_io_hero_doc_assets__files.get("images").get("image").get("svg"),
+preview_url: null,
+created_by: null,
+description: null,
+types: inherited.get("types"),
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_community_github_io_category_doc_components__page(parent, inherited, {
+uis: fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_community_github_io_category_doc_components__hero_section(root, inherited, {
+title: __args__.package_name,
+subtitle: __args__.created_by,
+cta_primary_text: "View more hero designs",
+cta_primary_link: "https://fastn.com/featured/",
+cta_secondary_text: "Preview",
+cta_secondary_link: __args__.preview_url,
+github_url: __args__.github,
+license_url: __args__.license_url
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_community_github_io_category_doc_components__preview(root, inherited, {
+title: "Hero Stack",
+uis: fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_community_github_io_category_doc_components__code_with_preview(root, inherited, {
+preview: fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_utils.getStaticValue(__args__.category.get("stack")) (root, inherited, {
+title: "Title copy goes here",
+subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt\nsagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum.\nProin viverra nulla sem, vel molestie lacus volutpat nec. Integer ut bibendum erat.",
+cta_primary_text: "View more",
+cta_primary_url: "/",
+cta_secondary_text: "Preview",
+cta_secondary_url: "/",
+image: __args__.image
+});
+}
+]),
+code: fastn.formula([__args__.package_full_name], function () {
+return fastn_community_github_io_hero_doc_docs__sample_code({
+a: __args__.package_full_name,
+cname: "stack",
+});
+})
+});
+}
+])
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_community_github_io_category_doc_components__preview(root, inherited, {
+title: "Hero Heading Center",
+uis: fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_community_github_io_category_doc_components__code_with_preview(root, inherited, {
+preview: fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_utils.getStaticValue(__args__.category.get("heading_center")) (root, inherited, {
+title: "Title copy goes here",
+subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt\nsagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum.\nProin viverra nulla sem, vel molestie lacus volutpat nec. Integer ut bibendum erat.",
+cta_primary_text: "View more",
+cta_primary_url: "/",
+cta_secondary_text: "Preview",
+cta_secondary_url: "/",
+image: __args__.image
+});
+}
+]),
+code: fastn.formula([__args__.package_full_name], function () {
+return fastn_community_github_io_hero_doc_docs__sample_code({
+a: __args__.package_full_name,
+cname: "heading-center",
+});
+})
+});
+}
+])
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_community_github_io_category_doc_components__preview(root, inherited, {
+title: "Hero Heading Left",
+uis: fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_community_github_io_category_doc_components__code_with_preview(root, inherited, {
+preview: fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_utils.getStaticValue(__args__.category.get("heading_left")) (root, inherited, {
+title: "Title copy goes here",
+subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt\nsagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum.\nProin viverra nulla sem, vel molestie lacus volutpat nec. Integer ut bibendum erat.",
+cta_primary_text: "View more",
+cta_primary_url: "/",
+cta_secondary_text: "Preview",
+cta_secondary_url: "/",
+image: __args__.image
+});
+}
+]),
+code: fastn.formula([__args__.package_full_name], function () {
+return fastn_community_github_io_hero_doc_docs__sample_code({
+a: __args__.package_full_name,
+cname: "heading-left",
+});
+})
+});
+}
+])
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_community_github_io_category_doc_components__preview(root, inherited, {
+title: "Hero Heading Right",
+uis: fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_community_github_io_category_doc_components__code_with_preview(root, inherited, {
+preview: fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_utils.getStaticValue(__args__.category.get("heading_right")) (root, inherited, {
+title: "Title copy goes here",
+subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt\nsagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum.\nProin viverra nulla sem, vel molestie lacus volutpat nec. Integer ut bibendum erat.",
+cta_primary_text: "View more",
+cta_primary_url: "/",
+cta_secondary_text: "Preview",
+cta_secondary_url: "/",
+image: __args__.image
+});
+}
+]),
+code: fastn.formula([__args__.package_full_name], function () {
+return fastn_community_github_io_hero_doc_docs__sample_code({
+a: __args__.package_full_name,
+cname: "heading-right",
+});
+})
+});
+}
+])
+});
+},
+function (root, inherited) {
+let rooti0 = fastn_community_github_io_category_doc_components__preview(root, inherited, {
+title: "Hero Without Image",
+uis: fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_community_github_io_category_doc_components__code_with_preview(root, inherited, {
+preview: fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_utils.getStaticValue(__args__.category.get("without_image")) (root, inherited, {
+title: "Title copy goes here",
+subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt\nsagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum.\nProin viverra nulla sem, vel molestie lacus volutpat nec. Integer ut bibendum erat.",
+cta_primary_text: "View more",
+cta_primary_url: "/",
+cta_secondary_text: "Preview",
+cta_secondary_url: "/"
+});
+}
+]),
+code: fastn.formula([__args__.package_full_name], function () {
+return fastn_community_github_io_hero_doc_docs__sample_code_without_image({
+a: __args__.package_full_name,
+cname: "without-image",
+});
+})
+});
+}
+])
+});
+}
+])
+});
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastn_community_github_io_hero_doc_docs__home"] = fastn_community_github_io_hero_doc_docs__home;
+let __user_name___github_io___repo_name____heading_center = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+subtitle: null,
+cta_primary_text: null,
+cta_primary_url: null,
+cta_secondary_text: null,
+cta_secondary_url: null,
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Text);
+parenti0.setProperty(fastn_dom.PropertyKind.StringValue, "Implement the **heading center** component here", inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(32), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["__user_name___github_io___repo_name____heading_center"] = __user_name___github_io___repo_name____heading_center;
+let __user_name___github_io___repo_name____heading_left = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+subtitle: null,
+cta_primary_text: null,
+cta_primary_url: null,
+cta_secondary_text: null,
+cta_secondary_url: null,
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Text);
+parenti0.setProperty(fastn_dom.PropertyKind.StringValue, "Implement the **heading left** component here", inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(32), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["__user_name___github_io___repo_name____heading_left"] = __user_name___github_io___repo_name____heading_left;
+let __user_name___github_io___repo_name____heading_right = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+subtitle: null,
+cta_primary_text: null,
+cta_primary_url: null,
+cta_secondary_text: null,
+cta_secondary_url: null,
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Text);
+parenti0.setProperty(fastn_dom.PropertyKind.StringValue, "Implement the **heading right** component here", inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(32), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["__user_name___github_io___repo_name____heading_right"] = __user_name___github_io___repo_name____heading_right;
+let __user_name___github_io___repo_name____stack = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+subtitle: null,
+cta_primary_text: null,
+cta_primary_url: null,
+cta_secondary_text: null,
+cta_secondary_url: null,
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Text);
+parenti0.setProperty(fastn_dom.PropertyKind.StringValue, "Implement the **HERO STACK** component here", inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(32), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["__user_name___github_io___repo_name____stack"] = __user_name___github_io___repo_name____stack;
+let __user_name___github_io___repo_name____without_image = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "__user_name___github_io___repo_name__";
+try {
+let __args__ = {
+subtitle: null,
+cta_primary_text: null,
+cta_primary_url: null,
+cta_secondary_text: null,
+cta_secondary_url: null,
+};
+inherited = fastn.recordInstance({
+...__args__,
+...inherited.getAllFields(),
+...args
+});
+__args__ = {
+...__args__,
+...args
+};
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Text);
+parenti0.setProperty(fastn_dom.PropertyKind.StringValue, "Implement the **without image** component here", inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(32), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["__user_name___github_io___repo_name____without_image"] = __user_name___github_io___repo_name____without_image;
+let fastn_community_github_io_category_doc_components__hero_section = fastn_community_github_io_category_doc_components_categories_section__hero_section;
+let fastn_community_github_io_category_doc_components__code_with_preview = fastn_community_github_io_category_doc_components_categories_code_block__code_with_preview;
+let fastn_community_github_io_category_doc_components__preview = fastn_community_github_io_category_doc_components_categories_previews__preview;
+let fastn_community_github_io_category_doc_components__page = fastn_community_github_io_category_doc_components_categories_site__page;
+fastn_dom.codeData.availableThemes["coldark-theme.dark"] = "code-theme-9A3284FD117DFF7CFD432FF860A5E14169FA592BC3DA4F5E8A6975143F5EA07F.css";
+fastn_dom.codeData.availableThemes["coldark-theme.light"] = "code-theme-99CD7B013C96C4632F0AEA39AC265387B814AE85A7D33666A4AE4BEFF59016D0.css";
+fastn_dom.codeData.availableThemes["coy-theme"] = "code-theme-B3AEA322EADEDA61F0E219845A0E9C8E73F6345E49362B46E6F52CEE40471248.css";
+fastn_dom.codeData.availableThemes["dracula-theme"] = "code-theme-0CA636E4954E3FC6184FB8000174F8EAA6C61DB10F6A18D74740E6D2032C1A2E.css";
+fastn_dom.codeData.availableThemes["duotone-theme.dark"] = "code-theme-95B9118AFC8631777EEBBD89B2066C3706A6DF3579B14F41AF05564E41CAA09C.css";
+fastn_dom.codeData.availableThemes["duotone-theme.earth"] = "code-theme-6EB6F03F9F578742CA0CD1189693E43A6135D910989ADD88CA3C0D6117EE24D7.css";
+fastn_dom.codeData.availableThemes["duotone-theme.forest"] = "code-theme-256C21B515FC9E77F95D88689A4086B9D9406B7AAE3A273780FE8B8748C5A7D2.css";
+fastn_dom.codeData.availableThemes["duotone-theme.light"] = "code-theme-0800A18B1822D6AFDAF807CF840379A2DB3483A1F058CA29FBCFB3815CA76148.css";
+fastn_dom.codeData.availableThemes["duotone-theme.sea"] = "code-theme-9A45313F167DBD90654BFD5BB3BC0BDF6AE447485C30B0389ADA7B49C069E46A.css";
+fastn_dom.codeData.availableThemes["duotone-theme.space"] = "code-theme-4DD8479BE14A755645BC09FF433FB70EB4CB28F0CBF3CA98DCB71B244B85B194.css";
+fastn_dom.codeData.availableThemes["fastn-theme.dark"] = "code-theme-F614177D3155EA8E915B35A3445175DC7C96D02FBC621F8AFD0FCCC417ED8A43.css";
+fastn_dom.codeData.availableThemes["fastn-theme.light"] = "code-theme-B8645DE281A38A3068C56919DE1BB0511696A1EE8002C5088748DA0BAC0806E6.css";
+fastn_dom.codeData.availableThemes["fire.light"] = "code-theme-A352AF572179AB980583D41BC41ADDBA36C4C17757A34C1C6AAAF2C253E25CE3.css";
+fastn_dom.codeData.availableThemes["gruvbox-theme.dark"] = "code-theme-B68AA27E05B319F04A9CD747AADBF9B9CD791E040DEC519AE9544B4FF65DDBAC.css";
+fastn_dom.codeData.availableThemes["gruvbox-theme.light"] = "code-theme-06E6F84E43C61CB1653D9F4FACD46B7EBCB3CD8A48EFAEF2E5BE3E9E9212D1E6.css";
+fastn_dom.codeData.availableThemes["laserwave-theme"] = "code-theme-0F444C6433C356376F7E92122F6C521FE40242BEC9D9E050359EE1DF4A9D5E6D.css";
+fastn_dom.codeData.availableThemes["material-theme.dark"] = "code-theme-8CCA3D600F91FA55950DF3132F2ABE4BA14CEEA13CD23E157BF6A137762B8452.css";
+fastn_dom.codeData.availableThemes["material-theme.light"] = "code-theme-8C59190F5018F48CCBB063359072EE9053D04923BBC5D1BA52B574E78D8C536A.css";
+fastn_dom.codeData.availableThemes["nightowl-theme"] = "code-theme-88F91252A8A0EA125B4BA2C7B85E65580DB580F1477931AADCB5118E4E69D1CD.css";
+fastn_dom.codeData.availableThemes["one-theme.dark"] = "code-theme-A24DC8F09D03756A62923E8A883CAE3B938D54E2813F0855312D2554DBE97BAD.css";
+fastn_dom.codeData.availableThemes["one-theme.light"] = "code-theme-60E02531E77333F3F1B636C4FC43E976EA9F41AD75268B2DD825C33C68B573A6.css";
+fastn_dom.codeData.availableThemes["vs-theme.dark"] = "code-theme-DC76F700474E809F7BA2D9914793D04881B17EA4699BA9C568C83D32A18B0173.css";
+fastn_dom.codeData.availableThemes["vs-theme.light"] = "code-theme-7852E516BA094B01897820BB3432BE553FE5B28F00E9CA0EBC9DFFB8312EE8BF.css";
+fastn_dom.codeData.availableThemes["ztouch-theme"] = "code-theme-792C7BB9F4C8DFF3E0CBC354D2084DBF71BC5750C2C1357F0E7D936867AFAB62.css";
+
+let main_wrapper = function (parent) {
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+main(parenti0);
+}
+fastn_virtual.hydrate(main_wrapper);
+ftd.post_init();
+})();
+
+window.onload = function() {
+fastn_utils.resetFullHeight();
+fastn_utils.setFullHeight();
+};
+
+</script>
+</html>

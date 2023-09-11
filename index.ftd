@@ -1,0 +1,234 @@
+-- import: fastn-community.github.io/hero-doc/docs
+-- import: __user_name__.github.io/__repo_name__
+
+
+
+
+;; ---------------- DOCUMENTATION FOR YOUR HEADER COMPONENTS ----------------------
+;; This renders the default documentation
+
+-- docs.home:
+package-name: __repo_name__
+package-full-name: __user_name__.github.io/__repo_name__
+github: https://github.com/__user_name__/__repo_name__
+category: __user_name__.github.io/__repo_name__
+preview-url: preview/
+license-url: NULL
+;; license-url: https://github.com/__user_name__/__repo_name__/blob/main/LICENSE
+
+
+
+
+;; ---------------- DEFINE YOUR HEADER COMPONENTS -----------------------
+;; Implement your header components below
+
+-- component header:
+optional caption site-name:
+optional ftd.image-src site-logo:
+string site-url:
+
+;; =============================================================================
+;; =======================<IMPLEMENT THE HEADER HERE>===========================
+;; =============================================================================
+
+-- ftd.text: Implement the **header** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: header
+
+
+
+
+
+
+
+
+
+
+-- component stack:
+caption title:
+optional body subtitle:
+optional string cta-primary-text:
+optional string cta-primary-url:
+optional string cta-secondary-text:
+optional string cta-secondary-url:
+ftd.image-src image:
+
+;; =============================================================================
+;; =====================<IMPLEMENT THE HERO STACK HERE>=========================
+;; =============================================================================
+
+-- ftd.text: Implement the **HERO STACK** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: stack
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component heading-center:
+caption title:
+optional body subtitle:
+optional string cta-primary-text:
+optional string cta-primary-url:
+optional string cta-secondary-text:
+optional string cta-secondary-url:
+ftd.image-src image:
+
+;; =============================================================================
+;; ===================<IMPLEMENT THE HEADING CENTER HERE>=======================
+;; =============================================================================
+
+-- ftd.text: Implement the **heading center** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: heading-center
+
+
+
+
+
+
+
+
+
+
+-- component heading-left:
+caption title:
+optional body subtitle:
+optional string cta-primary-text:
+optional string cta-primary-url:
+optional string cta-secondary-text:
+optional string cta-secondary-url:
+ftd.image-src image:
+
+;; =============================================================================
+;; ====================<IMPLEMENT THE HEADING LEFT HERE>========================
+;; =============================================================================
+
+-- ftd.text: Implement the **heading left** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: heading-left
+
+
+
+
+
+
+-- component heading-right:
+caption title:
+optional body subtitle:
+optional string cta-primary-text:
+optional string cta-primary-url:
+optional string cta-secondary-text:
+optional string cta-secondary-url:
+ftd.image-src image:
+
+;; =============================================================================
+;; ====================<IMPLEMENT THE HEADING RIGHT HERE>=======================
+;; =============================================================================
+
+-- ftd.text: Implement the **heading right** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: heading-right
+
+
+
+
+
+
+
+
+
+
+-- component without-image:
+caption title:
+optional body subtitle:
+optional string cta-primary-text:
+optional string cta-primary-url:
+optional string cta-secondary-text:
+optional string cta-secondary-url:
+
+;; =============================================================================
+;; ===================<IMPLEMENT THE WITHOUT IMAGE HERE>========================
+;; =============================================================================
+
+-- ftd.text: Implement the **without image** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: without-image
