@@ -1,4 +1,4 @@
-# Header Template using `fastn`
+# Hero Template using `fastn`
 
 This repository provides a prototype to create customizable business card 
 design using the `fastn` language. You can create designs which can be used 
@@ -21,7 +21,7 @@ The `index.ftd` file contains placeholders that you can replace with your own in
 
 ### 1. Replace Package Information
 
-In the section labeled "DOCUMENTATION FOR YOUR HEADER COMPONENTS", locate the 
+In the section labeled "DOCUMENTATION FOR YOUR Hero COMPONENTS", locate the 
 `docs.home component and check the following placeholders:
 
 **Note:** All these are auto-filled values during repository creation
@@ -33,27 +33,38 @@ In the section labeled "DOCUMENTATION FOR YOUR HEADER COMPONENTS", locate the
 - `github`: Your GitHub Repository URL
 - `created-by`: The creator name (This is an optional field. You can fill this information)
 
-### 2. Implement Header Components
+### 2. Implement Hero Components
 
-In the "DEFINE YOUR HEADER COMPONENTS" section, you will find placeholders for implementing the header components of your header.
+In the "DEFINE YOUR Hero COMPONENTS" section, you will find placeholders for implementing the Hero components of your Hero.
 
-For the `header` component, you need to use the following 
-headers (header details):
+For the `Hero` component, you need to use the following 
+Heros (Hero details):
 
-**Note:** These headers will be used by the users for filling in their 
-information. It's mandatory to use all these headers while creating your 
+**Note:** These Heros will be used by the users for filling in their 
+information. It's mandatory to use all these Heros while creating your 
 component.
 
-- `caption site-name`: Your site name (e.g., "John Doe")
-- `string site-url`: Your site url
-- `string site-logo`: Your site logo
-  (Optional for user)
 
+- `title`: your title 
+- `subtitle`: your body
+- `cta-primary-text`: your cta primary text
+- `cta-primary-url`: your cta primary url
+- `cta-secondary-text`: your cta secondary text
+- `cta-secondary-url`: your cta secondary url
+- `image`: your image
 
-Replace the code present in the line numbers 32 to 39 with actual header 
-component implementation/definition.
+Replace the code present in component definition of 
+`stack`: A custom web component or section in web development designed to create visually striking and attention-grabbing content layouts.
+`left-stack`:a web layout design where a prominent hero section with key content is positioned to the left, typically stacked alongside other content or sections on the webpage.
+`right-stack`:a web layout design where content or sections are stacked vertically on the right side of the screen.
+`heading-left`:A specific variation of a hero section or component where the main heading or text content is aligned to the left side of the screen.
+`heading-right`:A specific variation of a hero section or component where the main heading or text content is aligned to the right side of the screen.
+`heading-center`:A specific variation of a hero section or component where the main heading or text content is aligned to the center side of the screen.
+`without-image`:A specific variation of a hero section or component where the without image
+component.
+with actual component implementation/definition.
 
-**Note:** It is **recommended** to create a `component/header.ftd`  files for
+**Note:** It is **recommended** to create a `component/index.ftd`  files for
 implementing components respectively.
 
 Also, `assets` for your package is auto-imported, you can use `assets` to 
@@ -61,7 +72,7 @@ add image etc. (Checkout `FASTN.ftd` file).
 
 ## Fix the README.md content
 
-Replace the preview image with your template image in [`.github/assets/header.png`](.github/assets/header.png)
+Replace the preview image with your template image in [`.github/assets/Hero.png`](.github/assets/Hero.png)
 
 
 ## Publishing your category design on Github page:
@@ -78,10 +89,10 @@ The sitemap present in `FASTN.ftd` is used to organise your package.
 This uses 
 
 - `index.ftd`: It is the homepage which shows preview of  
-  your header
+  your Hero
 
 
-The documentation for this template comes from [`sitemap-header-doc`](fastn-community.github.io/sitemap-header-doc)
+The documentation for this template comes from [`hero-doc`](fastn-community.github.io/hero-doc)
 
 
 *To know more about `fastn`, visit [`fastn` website](https://fastn.com/). Also 

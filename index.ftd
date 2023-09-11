@@ -94,35 +94,6 @@ padding-vertical.px: 32
 
 
 
--- component right-stack:
-caption title:
-optional body subtitle:
-optional string cta-primary-text:
-optional string cta-primary-url:
-optional string cta-secondary-text:
-optional string cta-secondary-url:
-ftd.image-src image:
-
-;; =============================================================================
-;; =====================<IMPLEMENT THE HERO RIGHT STACK HERE>=========================
-;; =============================================================================
-
--- ftd.text: Implement the **HERO STACK** component here
-color: $inherited.colors.text
-background.solid: $inherited.colors.background.base
-width: fill-container
-height: fill-container
-text-align: center
-role: $inherited.types.copy-regular
-padding-vertical.px: 32
-
-;; =============================================================================
-;; ================================== END ======================================
-;; =============================================================================
-
--- end: right-stack
-
-
 
 
 
