@@ -2366,8 +2366,7 @@ class Node2 {
         } else if (kind === fastn_dom.PropertyKind.StringValue) {
             this.#rawInnerValue = staticValue;
             if (!ssr) {
-                let escapedHtmlValue = fastn_utils.escapeHtmlInMarkdown(staticValue);
-                staticValue = fastn_utils.markdown_inline(escapedHtmlValue);
+                staticValue = fastn_utils.markdown_inline(staticValue);
                 staticValue = fastn_utils.process_post_markdown(this.#node, staticValue);
             }
             this.#node.innerHTML = staticValue;
@@ -3030,21 +3029,22 @@ let fastn_utils = {
     },
 
     escapeHtmlInMarkdown(str) {
+        if(typeof str !== 'string') {
+            return str;
+        }
+
         let result = "";
         let ch_map = {
-            '<': "&lt;"
+            '<': "&lt;",
+            '>': "&gt;",
+            '&': "&amp;",
+            '"': "&quot;",
+            "'": "&#39;",
+            '/': "&#47;",
         };
-        // To avoid replacing html characters inside <code> body
-        let backtick_found = false;
         for (var i = 0; i < str.length; i++) {
             let current = str[i];
-            if (current === '`') backtick_found = !backtick_found;
-            if (ch_map[current] !== undefined && !backtick_found) {
-                result += ch_map[current];
-            }
-            else {
-                result += current;
-            }
+            result += ch_map[current] ?? current;
         }
         return result;
     },
@@ -3239,7 +3239,7 @@ class Node {
     toHtmlAsString() {
         const openingTag = `<${this.#tagName}${this.getDataIdString()}${this.getAttributesString()}${this.getClassString()}${this.getStyleString()}>`;
         const closingTag = `</${this.#tagName}>`;
-        const innerHTML = this.innerHTML;
+        const innerHTML = fastn_utils.escapeHtmlInMarkdown(this.innerHTML);
         const childNodes = this.#children.map(child => child.toHtmlAsString()).join('');
 
         return `${openingTag}${innerHTML}${childNodes}${closingTag}`;
