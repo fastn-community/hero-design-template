@@ -19,36 +19,6 @@ license-url: NULL
 
 
 
-;; ---------------- DEFINE YOUR HEADER COMPONENTS -----------------------
-;; Implement your header components below
-
--- component header:
-optional caption site-name:
-optional ftd.image-src site-logo:
-string site-url:
-
-;; =============================================================================
-;; =======================<IMPLEMENT THE HEADER HERE>===========================
-;; =============================================================================
-
--- ftd.text: Implement the **header** component here
-color: $inherited.colors.text
-background.solid: $inherited.colors.background.base
-width: fill-container
-height: fill-container
-text-align: center
-role: $inherited.types.copy-regular
-padding-vertical.px: 32
-
-;; =============================================================================
-;; ================================== END ======================================
-;; =============================================================================
-
--- end: header
-
-
-
-
 
 
 
@@ -87,10 +57,70 @@ padding-vertical.px: 32
 
 
 
+-- component left-stack:
+caption title:
+optional body subtitle:
+optional string cta-primary-text:
+optional string cta-primary-url:
+optional string cta-secondary-text:
+optional string cta-secondary-url:
+ftd.image-src image:
+
+;; =============================================================================
+;; =====================<IMPLEMENT THE HERO LEFT STACK HERE>=========================
+;; =============================================================================
+
+-- ftd.text: Implement the **HERO STACK** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: left-stack
 
 
 
 
+
+
+
+
+
+
+-- component right-stack:
+caption title:
+optional body subtitle:
+optional string cta-primary-text:
+optional string cta-primary-url:
+optional string cta-secondary-text:
+optional string cta-secondary-url:
+ftd.image-src image:
+
+;; =============================================================================
+;; =====================<IMPLEMENT THE HERO RIGHT STACK HERE>=========================
+;; =============================================================================
+
+-- ftd.text: Implement the **HERO STACK** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: right-stack
 
 
 
