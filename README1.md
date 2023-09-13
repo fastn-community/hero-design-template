@@ -93,7 +93,7 @@ To use the Hero Components in your `fastn` package, follow these steps:
 
    lorem ipsum
 
-   ;; Six Variation
+   ;; Seventh Variation
    -- hero.without-image: My Site
    cta-primary-text: View More
    cta-primary-url: /
