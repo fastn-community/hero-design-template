@@ -36,6 +36,7 @@ optional string cta-primary-url:
 optional string cta-secondary-text:
 optional string cta-secondary-url:
 ftd.image-src image:
+optional ftd.background background:
 
 ;; =============================================================================
 ;; =====================<IMPLEMENT THE HERO STACK HERE>=========================
@@ -68,6 +69,7 @@ optional string cta-primary-url:
 optional string cta-secondary-text:
 optional string cta-secondary-url:
 ftd.image-src image:
+optional ftd.background background:
 
 ;; =============================================================================
 ;; =====================<IMPLEMENT THE HERO LEFT STACK HERE>====================
@@ -112,6 +114,7 @@ optional string cta-primary-url:
 optional string cta-secondary-text:
 optional string cta-secondary-url:
 ftd.image-src image:
+optional ftd.background background:
 
 ;; =============================================================================
 ;; =================<IMPLEMENT THE HERO HEADING CENTER HERE>====================
@@ -149,6 +152,7 @@ optional string cta-primary-url:
 optional string cta-secondary-text:
 optional string cta-secondary-url:
 ftd.image-src image:
+optional ftd.background background:
 
 ;; =============================================================================
 ;; ==================<IMPLEMENT THE HERO HEADING LEFT HERE>=====================
@@ -182,6 +186,7 @@ optional string cta-primary-url:
 optional string cta-secondary-text:
 optional string cta-secondary-url:
 ftd.image-src image:
+optional ftd.background background:
 
 ;; =============================================================================
 ;; ==================<IMPLEMENT THE HERO HEADING RIGHT HERE>====================
@@ -218,6 +223,7 @@ optional string cta-primary-text:
 optional string cta-primary-url:
 optional string cta-secondary-text:
 optional string cta-secondary-url:
+optional ftd.background background:
 
 ;; =============================================================================
 ;; =================<IMPLEMENT THE HERO WITHOUT IMAGE HERE>=====================
