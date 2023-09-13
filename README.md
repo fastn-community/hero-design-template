@@ -5,23 +5,22 @@ design using the `fastn` language. You can create designs which can be used
 by users to easily create professional business card by filling in their 
 information.
 
-
 ## Getting Started
 
 To use this template, follow the steps below:
 
-1. Click on `Use this Template` or go to the following [link](https://github.com/new?template_name=repo_name&template_owner=fastn-community)
+1. Click on `Use this Template` or go to the following [link](https://github.com/new?template_name=hero-design-template&template_owner=fastn-community)
 2. Enter the required details to create new repository (**Note**: repository name should be in kebab case).
 3. Clone this newly created repository to your local machine.
 4. Open the `fastn` file named `index.ftd` in a text editor.
 
-## Creating a new Business Card category
+## Creating a new Hero category
 
 The `index.ftd` file contains placeholders that you can replace with your own information. Here's what you need to do:
 
 ### 1. Replace Package Information
 
-In the section labeled "DOCUMENTATION FOR YOUR Hero COMPONENTS", locate the 
+In the section labeled "DOCUMENTATION FOR YOUR HERO COMPONENTS", locate the 
 `docs.home component and check the following placeholders:
 
 **Note:** All these are auto-filled values during repository creation
@@ -35,15 +34,43 @@ In the section labeled "DOCUMENTATION FOR YOUR Hero COMPONENTS", locate the
 
 ### 2. Implement Hero Components
 
-In the "DEFINE YOUR Hero COMPONENTS" section, you will find placeholders for implementing the Hero components of your Hero.
+In the "DEFINE YOUR HERO COMPONENTS" section, you will find placeholders for 
+implementing the Hero components of your Hero.
 
-For the `Hero` component, you need to use the following 
-Heros (Hero details):
+For the `Hero` component, you need to use the following headers (Hero details):
 
-**Note:** These Heros will be used by the users for filling in their 
-information. It's mandatory to use all these Heros while creating your 
+**Note:** These headers will be used by the users for filling in their 
+information. It's mandatory to use all these headers while creating your 
 component.
 
+#### Hero stack
+
+A Hero stack component typically arrange its elements in stack form, i.e. 
+one after other. *The name of component is `stack`.*
+
+#### Hero Left stack
+
+A Hero left stack component typically positioned its elements to the left in 
+stack form. *The name of component is `left-stack`.*
+
+#### Hero Heading Left
+
+A Hero Heading Left component aligns its the main heading or text content  
+to the left side of the screen. *The name of component is `heading-left`.*
+
+#### Hero Heading Right
+
+A Hero Heading Right component aligns its the main heading or text content  
+to the right side of the screen. *The name of component is `heading-right`.*
+
+#### Hero Heading Center
+
+A Hero Heading Right component aligns its the main heading or text content  
+to the center side of the screen. *The name of component is `heading-center`.*
+
+
+The following properties are available for `Hero Left stack`, `Hero Heading 
+Left`, `Hero Heading Right` and `Hero Heading Center` components:
 
 - `title`: your title 
 - `subtitle`: your body
@@ -53,19 +80,26 @@ component.
 - `cta-secondary-url`: your cta secondary url
 - `image`: your image
 
-Replace the code present in component definition of 
-`stack`: A custom web component or section in web development designed to create visually striking and attention-grabbing content layouts.
-`left-stack`:a web layout design where a prominent hero section with key content is positioned to the left, typically stacked alongside other content or sections on the webpage.
-`right-stack`:a web layout design where content or sections are stacked vertically on the right side of the screen.
-`heading-left`:A specific variation of a hero section or component where the main heading or text content is aligned to the left side of the screen.
-`heading-right`:A specific variation of a hero section or component where the main heading or text content is aligned to the right side of the screen.
-`heading-center`:A specific variation of a hero section or component where the main heading or text content is aligned to the center side of the screen.
-`without-image`:A specific variation of a hero section or component where the without image
-component.
-with actual component implementation/definition.
 
-**Note:** It is **recommended** to create a `component/index.ftd`  files for
-implementing components respectively.
+#### Hero Without Image
+
+A Hero Without Image component does not have image element. *The name of 
+component is `without-image`.*
+
+The following properties are available:
+
+- `title`: your title
+- `subtitle`: your body
+- `cta-primary-text`: your cta primary text
+- `cta-primary-url`: your cta primary url
+- `cta-secondary-text`: your cta secondary text
+- `cta-secondary-url`: your cta secondary url
+
+
+**Note:** It is **recommended** to create a `components/stack.ftd`,  
+`components/left-stack.ftd`, `components/heading-left.ftd`,   
+`components/heading-right.ftd`, `components/heading-center.ftd` and
+`components/without-image.ftd` files for implementing components respectively.
 
 Also, `assets` for your package is auto-imported, you can use `assets` to 
 add image etc. (Checkout `FASTN.ftd` file).

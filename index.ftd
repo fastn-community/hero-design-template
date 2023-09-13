@@ -4,7 +4,7 @@
 
 
 
-;; ---------------- DOCUMENTATION FOR YOUR HEADER COMPONENTS ----------------------
+;; --------------- DOCUMENTATION FOR YOUR HERO COMPONENTS ----------------------
 ;; This renders the default documentation
 
 -- docs.home:
@@ -23,6 +23,8 @@ license-url: NULL
 
 
 
+
+;; ---------------------- DEFINE YOUR HERO COMPONENTS --------------------------
 
 
 -- component stack:
@@ -67,7 +69,7 @@ optional string cta-secondary-url:
 ftd.image-src image:
 
 ;; =============================================================================
-;; =====================<IMPLEMENT THE HERO LEFT STACK HERE>=========================
+;; =====================<IMPLEMENT THE HERO LEFT STACK HERE>====================
 ;; =============================================================================
 
 -- ftd.text: Implement the **HERO STACK** component here
@@ -111,7 +113,7 @@ optional string cta-secondary-url:
 ftd.image-src image:
 
 ;; =============================================================================
-;; ===================<IMPLEMENT THE HEADING CENTER HERE>=======================
+;; =================<IMPLEMENT THE HERO HEADING CENTER HERE>====================
 ;; =============================================================================
 
 -- ftd.text: Implement the **heading center** component here
@@ -148,7 +150,7 @@ optional string cta-secondary-url:
 ftd.image-src image:
 
 ;; =============================================================================
-;; ====================<IMPLEMENT THE HEADING LEFT HERE>========================
+;; ==================<IMPLEMENT THE HERO HEADING LEFT HERE>=====================
 ;; =============================================================================
 
 -- ftd.text: Implement the **heading left** component here
@@ -181,7 +183,7 @@ optional string cta-secondary-url:
 ftd.image-src image:
 
 ;; =============================================================================
-;; ====================<IMPLEMENT THE HEADING RIGHT HERE>=======================
+;; ==================<IMPLEMENT THE HERO HEADING RIGHT HERE>====================
 ;; =============================================================================
 
 -- ftd.text: Implement the **heading right** component here
@@ -217,7 +219,7 @@ optional string cta-secondary-text:
 optional string cta-secondary-url:
 
 ;; =============================================================================
-;; ===================<IMPLEMENT THE WITHOUT IMAGE HERE>========================
+;; =================<IMPLEMENT THE HERO WITHOUT IMAGE HERE>=====================
 ;; =============================================================================
 
 -- ftd.text: Implement the **without image** component here

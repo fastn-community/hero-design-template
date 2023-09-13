@@ -1,8 +1,8 @@
 # Hero Component
 
 The **Hero Component** is a UI element typically found at the top of a webpage
-or application. It serves as a menu or navigation tool, allowing users to easily 
-access different sections, pages, or features of the website or app.
+or application. It serves as a menu or navigation tool, allowing users to 
+easily access different sections, pages, or features of the website or app.
 
 With just a few lines of code, you can showcase site logo, site name and sitemap
 details (sections and subsections).
@@ -19,87 +19,88 @@ Here's an example of how the Hero Component might look when rendered:
 
 ## Getting Started
 
-To use the Business Card Component in your `fastn` package, follow these steps:
+To use the Hero Components in your `fastn` package, follow these steps:
 
 1. **Add the Hero Dependency**: Open your `FASTN.ftd` file and add 
    the following line to include the Hero component:
    ```ftd
    -- fastn.dependency: __user_name__.github.io/__repo_name__
    ```
+   
 2. **Use the Hero Component**: In the file where you want to add 
    the Hero (e.g., `index.ftd`), you can import the component and 
    use it like this:
     ```ftd
-   -- import: __user_name__.github.io/__repo_name__ as Hero
+   -- import: __user_name__.github.io/__repo_name__ as hero
 
    ;; First Variation
-   -- Hero.stack: My Site
-      cta-primary-text: View More
-      cta-primary-url: /
-      cta-secondary-text: Preview
-      cta-secondary-url: /
-      image: $assets.files.images.image.svg
+   -- hero.stack: My Site
+   cta-primary-text: View More
+   cta-primary-url: /
+   cta-secondary-text: Preview
+   cta-secondary-url: /
+   image: $assets.files.images.image.svg
 
-      lorem ipsum
+   lorem ipsum
 
    ;; Second Variation
-      -- Hero.left-stack: My Site
-      cta-primary-text: View More
-      cta-primary-url: /
-      cta-secondary-text: Preview
-      cta-secondary-url: /
-      image: $assets.files.images.image.svg
-      
-      lorem ipsum
+   -- hero.left-stack: My Site
+   cta-primary-text: View More
+   cta-primary-url: /
+   cta-secondary-text: Preview
+   cta-secondary-url: /
+   image: $assets.files.images.image.svg
+   
+   lorem ipsum
 
    ;; Third Variation
-      -- Hero.right-stack: My Site
-      cta-primary-text: View More
-      cta-primary-url: /
-      cta-secondary-text: Preview
-      cta-secondary-url: /
-      image: $assets.files.images.image.svg
-      
-      lorem ipsum
+   -- hero.right-stack: My Site
+   cta-primary-text: View More
+   cta-primary-url: /
+   cta-secondary-text: Preview
+   cta-secondary-url: /
+   image: $assets.files.images.image.svg
+   
+   lorem ipsum
 
    ;; Four Variation
-      -- Hero.heading-left: My Site
-      cta-primary-text: View More
-      cta-primary-url: /
-      cta-secondary-text: Preview
-      cta-secondary-url: /
-      image: $assets.files.images.image.svg
+   -- hero.heading-left: My Site
+   cta-primary-text: View More
+   cta-primary-url: /
+   cta-secondary-text: Preview
+   cta-secondary-url: /
+   image: $assets.files.images.image.svg
 
-      lorem ipsum
+   lorem ipsum
 
    ;; Five Variation
-      -- Hero.heading-right: My Site
-      cta-primary-text: View More
-      cta-primary-url: /
-      cta-secondary-text: Preview
-      cta-secondary-url: /
-      image: $assets.files.images.image.svg
+   -- hero.heading-right: My Site
+   cta-primary-text: View More
+   cta-primary-url: /
+   cta-secondary-text: Preview
+   cta-secondary-url: /
+   image: $assets.files.images.image.svg
 
-      lorem ipsum
-
-   ;; Six Variation
-      -- Hero.heading-center: My Site
-      cta-primary-text: View More
-      cta-primary-url: /
-      cta-secondary-text: Preview
-      cta-secondary-url: /
-      image: $assets.files.images.image.svg
-
-      lorem ipsum
+   lorem ipsum
 
    ;; Six Variation
-      -- Hero.without-image: My Site
-      cta-primary-text: View More
-      cta-primary-url: /
-      cta-secondary-text: Preview
-      cta-secondary-url: /
-      
-      lorem ipsum
+   -- hero.heading-center: My Site
+   cta-primary-text: View More
+   cta-primary-url: /
+   cta-secondary-text: Preview
+   cta-secondary-url: /
+   image: $assets.files.images.image.svg
+
+   lorem ipsum
+
+   ;; Six Variation
+   -- hero.without-image: My Site
+   cta-primary-text: View More
+   cta-primary-url: /
+   cta-secondary-text: Preview
+   cta-secondary-url: /
+   
+   lorem ipsum
    ```
    
 ## Customization
@@ -109,4 +110,7 @@ fields.
 
 ## Fields
 
-Feel free to reach out if you have any questions or need further assistance. Happy coding!
+Feel free to reach out if you have any questions or need further assistance. 
+
+
+***Happy coding!***
