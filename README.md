@@ -73,13 +73,14 @@ to the center side of the screen. *The name of component is `heading-center`.*
 The following properties are available for `Hero Left stack`, `Hero Heading 
 Left`, `Hero Heading Right` and `Hero Heading Center` components:
 
-- `title`: your title 
-- `subtitle`: your body
-- `cta-primary-text`: your cta primary text
-- `cta-primary-url`: your cta primary url
-- `cta-secondary-text`: your cta secondary text
-- `cta-secondary-url`: your cta secondary url
-- `image`: your image
+- `caption title`: your title 
+- `optional body subtitle`: your body
+- `optional string cta-primary-text`: your cta primary text
+- `optional string cta-primary-url`: your cta primary url
+- `optional string cta-secondary-text`: your cta secondary text
+- `optional string cta-secondary-url`: your cta secondary url
+- `ftd.image-src image`: your image
+- `optional ftd.background background`: Background given by user
 
 
 #### Hero Without Image
@@ -89,12 +90,12 @@ component is `without-image`.*
 
 The following properties are available:
 
-- `title`: your title
-- `subtitle`: your body
-- `cta-primary-text`: your cta primary text
-- `cta-primary-url`: your cta primary url
-- `cta-secondary-text`: your cta secondary text
-- `cta-secondary-url`: your cta secondary url
+- `caption title`: your title
+- `optional body subtitle`: your body
+- `optional string cta-primary-text`: your cta primary text
+- `optional string cta-primary-url`: your cta primary url
+- `optional string cta-secondary-text`: your cta secondary text
+- `optional string cta-secondary-url`: your cta secondary url
 
 
 **Note:** It is **recommended** to create a `components/stack.ftd`,  
