@@ -14,7 +14,7 @@ github: https://github.com/__user_name__/__repo_name__
 category: __user_name__.github.io/__repo_name__
 license-url: NULL
 ;; created-by: <GIVE THE NAME OF THE CREATOR>
-;; creator-link: <GIVE THE URL FOR THE CREATOR>
+;; creator-url: <GIVE THE URL FOR THE CREATOR>
 ;; license-url: https://github.com/__user_name__/__repo_name__/blob/main/LICENSE
 
 
