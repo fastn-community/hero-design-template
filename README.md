@@ -37,10 +37,11 @@ In the section labeled "DOCUMENTATION FOR YOUR HERO COMPONENTS", locate the
 In the "DEFINE YOUR HERO COMPONENTS" section, you will find placeholders for 
 implementing the Hero components of your Hero.
 
-For the `Hero` component, you need to use the following headers (Hero details):
+For the `Hero` component, you need to use the following properties (Hero 
+details):
 
-**Note:** These headers will be used by the users for filling in their 
-information. It's mandatory to use all these headers while creating your 
+**Note:** These properties will be used by the users for filling in their 
+information. It's mandatory to use all these properties while creating your 
 component.
 
 #### Hero stack
