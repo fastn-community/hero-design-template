@@ -472,6 +472,10 @@ class RecordInstance {
         }
         this.#closures.forEach((closure) => closure.update());
     }
+    setAndReturn(key, value) {
+        this.set(key, value);
+        return this;
+    }
     replace(obj) {
         for (let key in this.#fields) {
             if (!(key in obj.#fields)) {
@@ -2678,6 +2682,28 @@ let fastn_utils = {
            return obj;
         }
     },
+    getInheritedValues(default_args, inherited, function_args) {
+        let record_fields = {
+            "colors": ftd.default_colors.getClone().setAndReturn("is-root", true),
+            "types": ftd.default_types.getClone().setAndReturn("is-root", true)
+        }
+        Object.assign(record_fields, default_args);
+        let fields = {};
+        if (inherited instanceof fastn.recordInstanceClass) {
+            fields = inherited.getAllFields();
+            if (fields["colors"].get("is-root")) {
+               delete fields.colors;
+            }
+            if (fields["types"].get("is-root")) {
+               delete fields.types;
+            }
+        }
+        Object.assign(record_fields, fields);
+        Object.assign(record_fields, function_args);
+        return fastn.recordInstance({
+              ...record_fields
+        });
+    },
     removeNonFastnClasses(node) {
         let classList = node.getNode().classList;
         let extraCodeData = node.getExtraData().code;
@@ -4642,6 +4668,6 @@ ftd.breakpoint_width = fastn.recordInstance({
 });
 ftd.device = fastn.mutable(fastn_dom.DeviceData.Desktop);
 let inherited = fastn.recordInstance({
-  colors: ftd.default_colors,
-  types: ftd.default_types
+  colors: ftd.default_colors.getClone().setAndReturn("is_root", true),
+  types: ftd.default_types.getClone().setAndReturn("is_root", true)
 });

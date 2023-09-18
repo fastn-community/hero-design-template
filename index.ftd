@@ -28,7 +28,7 @@ license-url: NULL
 ;; ---------------------- DEFINE YOUR HERO COMPONENTS --------------------------
 
 
--- component stack:
+-- component hero-stack:
 caption title:
 optional body subtitle:
 optional string cta-primary-text:
@@ -55,13 +55,13 @@ padding-vertical.px: 32
 ;; ================================== END ======================================
 ;; =============================================================================
 
--- end: stack
+-- end: hero-stack
 
 
 
 
 
--- component left-stack:
+-- component hero-left-stack:
 caption title:
 optional body subtitle:
 optional string cta-primary-text:
@@ -88,7 +88,7 @@ padding-vertical.px: 32
 ;; ================================== END ======================================
 ;; =============================================================================
 
--- end: left-stack
+-- end: hero-left-stack
 
 
 
@@ -106,7 +106,7 @@ padding-vertical.px: 32
 
 
 
--- component heading-center:
+-- component hero-heading-center:
 caption title:
 optional body subtitle:
 optional string cta-primary-text:
@@ -133,7 +133,7 @@ padding-vertical.px: 32
 ;; ================================== END ======================================
 ;; =============================================================================
 
--- end: heading-center
+-- end: hero-heading-center
 
 
 
@@ -144,7 +144,7 @@ padding-vertical.px: 32
 
 
 
--- component heading-left:
+-- component hero-heading-left:
 caption title:
 optional body subtitle:
 optional string cta-primary-text:
@@ -171,14 +171,14 @@ padding-vertical.px: 32
 ;; ================================== END ======================================
 ;; =============================================================================
 
--- end: heading-left
+-- end: hero-heading-left
 
 
 
 
 
 
--- component heading-right:
+-- component hero-heading-right:
 caption title:
 optional body subtitle:
 optional string cta-primary-text:
@@ -205,7 +205,7 @@ padding-vertical.px: 32
 ;; ================================== END ======================================
 ;; =============================================================================
 
--- end: heading-right
+-- end: hero-heading-right
 
 
 
@@ -216,7 +216,7 @@ padding-vertical.px: 32
 
 
 
--- component without-image:
+-- component hero-without-image:
 caption title:
 optional body subtitle:
 optional string cta-primary-text:
@@ -242,4 +242,4 @@ padding-vertical.px: 32
 ;; ================================== END ======================================
 ;; =============================================================================
 
--- end: without-image
+-- end: hero-without-image
